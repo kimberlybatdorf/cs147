@@ -1,6 +1,7 @@
 import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from "@react-navigation/native";
 
 
 export default function App() {
@@ -33,14 +34,32 @@ export default function App() {
       const Tab = createBottomTabNavigator();
 
 
+      //Starting on navigation, will look at this chunk of code later
+//       <NavigationContainer>
+//       <Tab.Navigator>
+//       tabBarOptions={{
+//     labelStyle: { fontSize: 14 },
+//   }}
+//    screenOptions={({ route }) => ({
+//           tabBarIcon: ({ focused }) => {
+//           }
+//    })}
+ 
+//     </Tab.Navigator>
+//     </NavigationContainer>
 
 
     return(
+        <NavigationContainer>
+            <Tab.Navigator>
+                
         <SafeAreaView style={styles.container}>
             {/* TODO: Your code goes here */}
             <Text>check check one two three</Text>
             
           </SafeAreaView>
+          </Tab.Navigator>
+          </NavigationContainer>
         );
 
 
