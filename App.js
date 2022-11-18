@@ -1,8 +1,40 @@
 import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 export default function App() {
+
+    function UpdatesScreen() {
+        return (
+          <SafeAreaView>
+            <Text>Updates Screen</Text>
+          </SafeAreaView>
+        );
+      }
+
+
+      function AnalyticsScreen() {
+        return (
+          <SafeAreaView>
+            <Text>Analytics</Text>
+          </SafeAreaView>
+        );
+      }
+
+      function CommunityScreen() {
+        return (
+          <SafeAreaView>
+            <Text>Community Screen</Text>
+          </SafeAreaView>
+        );
+      }
+
+      const Tab = createBottomTabNavigator();
+
+
+
+
     return(
         <SafeAreaView style={styles.container}>
             {/* TODO: Your code goes here */}
