@@ -3,14 +3,16 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native";
 import { Ionicons } from '@expo/vector-icons';
+import images from "./assets/Images";
 
 
 
 
     function UpdatesScreen() {
         return (
-          <SafeAreaView>
-            <Text>Updates Screen</Text>
+          <SafeAreaView style={styles.container}>
+            <Text style={styles.screenText}>Updates Screen</Text>
+            <Image source={images.updatesFilled}/>
           </SafeAreaView>
         );
       }
@@ -18,16 +20,16 @@ import { Ionicons } from '@expo/vector-icons';
 
       function AnalyticsScreen() {
         return (
-          <SafeAreaView>
-            <Text>Analytics</Text>
+          <SafeAreaView style={styles.container}>
+            <Text style={styles.screenText}>Analytics</Text>
           </SafeAreaView>
         );
       }
 
       function CommunityScreen() {
         return (
-          <SafeAreaView>
-            <Text>Community Screen</Text>
+          <SafeAreaView style={styles.container}>
+            <Text style={styles.screenText}>Community Screen</Text>
           </SafeAreaView>
         );
       }
@@ -35,18 +37,7 @@ import { Ionicons } from '@expo/vector-icons';
       const Tab = createBottomTabNavigator();
 export default function App() {
 
-      //Starting on navigation, will look at this chunk of code later
-//       <NavigationContainer>
-//       <Tab.Navigator>
-//       
-//    screenOptions={({ route }) => ({
-//           tabBarIcon: ({ focused }) => {
-//           }
-//    })}
  
-//     </Tab.Navigator>
-//     </NavigationContainer>
-
 
     return(
         <NavigationContainer>
@@ -102,6 +93,10 @@ const styles = StyleSheet.create({
       height: 50,
       width: 50,
     },
+
+    screenText: {
+        fontSize: 32,
+      },
     
   
   });
