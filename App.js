@@ -50,13 +50,16 @@ export default function App() {
 
     return(
         <NavigationContainer>
-            <Tab.Navigator>
+            <Tab.Navigator
+            tabBarOptions={{
+                labelStyle: { fontSize: 14 },
+              }}
             screenOptions={({ route }) => ({
           tabBarIcon: ({ focused }) => {
-            let iconSource;
+            let iconName;
 
             if (route.name === 'Updates') {
-              iconSource = focused ? 'home' : 'home-outline';
+              iconName = focused ? 'home' : 'home-outline';
             } else if (route.name === 'Analytics') {
               iconName = focused ? 'settings' : 'settings-outline';
             } else if (route.name === 'Community') {
