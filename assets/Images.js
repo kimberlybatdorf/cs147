@@ -1,7 +1,9 @@
 const images = {
     analyticsOutline: require('./ANALYTICSICON.png'),
     analyticsFilled: require('./ANALYTICSICON2.png'),
-    backArrow: require('./COMMUNITYICON.png'),
+    backArrow: require('./BACKARROW.png'),
+    communityOutline: require('./COMMUNITYICON.png'),
+    communityFilled: require('./COMMUNITYICON2.png'),
     filterbutton: require('./FILTERICON.png'),
     micIcon: require('./MICICON.png'),
     updatesOutline: require('./NOTEPADICON.png'),

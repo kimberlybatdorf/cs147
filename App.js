@@ -1,9 +1,10 @@
-import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List } from "react-native";
+import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native";
 import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
+import UpdatesTab from "./UpdatesTab";
 
 
 
@@ -47,25 +48,25 @@ export default function App() {
               }}
             screenOptions={({ route }) => ({
           tabBarIcon: ({ focused }) => {
-            let iconName;
+            let iconSource;
 
             if (route.name === 'Updates') {
-              iconName = focused ? 'home' : 'home-outline';
+              iconSource = focused ? images.updatesFilled : images.updatesOutline;
             } else if (route.name === 'Analytics') {
-              iconName = focused ? 'settings' : 'settings-outline';
+              iconSource = focused ? images.analyticsFilled : images.analyticsOutline;
             } else if (route.name === 'Community') {
-              iconName = focused
-                ? 'information-circle'
-                : 'information-circle-outline';
+              iconSource = focused
+                ? images.communityFilled
+                : images.communityOutline;
             }
 
-            return <Ionicons name={iconName} size={24} color="black" />;
+            return <Image source={iconSource} style= {{height: 64, width: 64}}  />;
           }
         })}>
             
             
 
-        <Tab.Screen name="Updates" component={UpdatesScreen} />
+        <Tab.Screen options={{headerShown: false}} name="Updates" component={UpdatesTab} />
         <Tab.Screen name="Analytics" component={AnalyticsScreen} />
         <Tab.Screen name="Community" component={CommunityScreen} />
           </Tab.Navigator>
@@ -80,6 +81,7 @@ const styles = StyleSheet.create({
     container: {
       justifyContent: "center",
       alignItems: "center",
+      backgroundColor: '#B3B3B3',
       flex: 1,
     },
     button: {
