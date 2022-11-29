@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 
 function UpdatesHomeScreen() {
@@ -40,6 +41,7 @@ function UpdatesHomeScreen() {
         <Text style={styles.screenText}>Creating New Post</Text>
         {/* <Image source={images.updatesFilled}/> */}
         <Text style={styles.screenText}>Symptoms</Text>
+        {/* <BouncyCheckbox onPress={(isChecked: boolean) => {}} /> */}
         <Text style={styles.screenText}>Mood</Text>
         <Text style={styles.screenText}>Journal</Text>
         <TextInput
