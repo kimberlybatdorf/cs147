@@ -41,8 +41,31 @@ function UpdatesHomeScreen() {
         <Text style={styles.screenText}>Creating New Post</Text>
         {/* <Image source={images.updatesFilled}/> */}
         <Text style={styles.screenText}>Symptoms</Text>
-        {/* <BouncyCheckbox onPress={(isChecked: boolean) => {}} /> */}
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 20
+        }}>
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+        </View>
         <Text style={styles.screenText}>Mood</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 20
+        }}>
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+          <BouncyCheckbox onPress={(isChecked) => {}} />
+        </View>
         <Text style={styles.screenText}>Journal</Text>
         <TextInput
           style={{height: 40, backgroundColor: '#313033', color: '#FFFFFF'}}
@@ -51,6 +74,7 @@ function UpdatesHomeScreen() {
           onChangeText={newText => setText(newText)}
           defaultValue={text}
         />
+        {/* MICROPHONE ICON */}
         {/* SAVE BUTTON */}
       </SafeAreaView>
     );
