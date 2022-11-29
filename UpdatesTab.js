@@ -33,8 +33,10 @@ function UpdatesHomeScreen() {
   function CreateNewPostScreen() {
     return (
       <SafeAreaView style={styles.container}>
+        
+        <Text style={styles.screenText}>DATE</Text>
         <Text style={styles.screenText}>Creating New Post</Text>
-        <Image source={images.updatesFilled}/>
+        {/* <Image source={images.updatesFilled}/> */}
       </SafeAreaView>
     );
   }
