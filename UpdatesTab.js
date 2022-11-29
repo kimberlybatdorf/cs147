@@ -1,4 +1,5 @@
-import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase } from "react-native";
+import React, { useState } from 'react';
+import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
@@ -31,12 +32,24 @@ function UpdatesHomeScreen() {
   }
 
   function CreateNewPostScreen() {
+    const [text, setText] = useState('');
     return (
       <SafeAreaView style={styles.container}>
-        
+        {/* BACK ARROW BUTTON */}
         <Text style={styles.screenText}>DATE</Text>
         <Text style={styles.screenText}>Creating New Post</Text>
         {/* <Image source={images.updatesFilled}/> */}
+        <Text style={styles.screenText}>Symptoms</Text>
+        <Text style={styles.screenText}>Mood</Text>
+        <Text style={styles.screenText}>Journal</Text>
+        <TextInput
+          style={{height: 40, backgroundColor: '#313033', color: '#FFFFFF'}}
+          placeholder="How are you feeling today? In what ways do you need support? What have you accomplished today?"
+          placeholderTextColor='#E5E1E5'
+          onChangeText={newText => setText(newText)}
+          defaultValue={text}
+        />
+        {/* SAVE BUTTON */}
       </SafeAreaView>
     );
   }
