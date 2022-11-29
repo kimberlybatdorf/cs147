@@ -38,7 +38,7 @@ function UpdatesHomeScreen() {
     return (
       <SafeAreaView style={styles.container}>
         {/* BACK ARROW BUTTON */}
-        <Text style={{alignSelf: 'center', fontSize: 42, color: '#FFFFFF', marginTop: 12}}>DATE</Text>
+        <Text style={{alignSelf: 'center', fontSize: 42, color: '#FFFFFF', marginTop: 12}}>November 12</Text>
         <Text style={{fontSize: 32, color: '#FFFFFF', padding: 15}}>Symptoms</Text>
         <View  
           style={{
@@ -65,7 +65,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Nausea</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Dizziness</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Headache</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye strain</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye Strain</Text>
         </View>
         <Text style={{fontSize: 32, color: '#FFFFFF', padding: 15}}>Mood</Text>
         <View  
