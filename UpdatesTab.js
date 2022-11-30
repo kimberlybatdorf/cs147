@@ -37,9 +37,11 @@ function UpdatesHomeScreen() {
     const [text, setText] = useState('');
     return (
       <SafeAreaView style={styles.container}>
-        {/* BACK ARROW BUTTON */}
-        <Text style={{alignSelf: 'center', fontSize: 42, color: '#FFFFFF', marginTop: 12}}>November 12</Text>
-        <Text style={{fontSize: 32, color: '#FFFFFF', padding: 15}}>Symptoms</Text>
+        <View style={{flexDirection: "row"}}>
+          <Text style={{fontSize: 42, color: '#FFFFFF', top: 12, left: 85}}>November 12</Text>
+          <Image style={{marginTop: 3, left: 120, top: 8}} source={images.unlockedIcon}/>
+        </View>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Symptoms</Text>
         <View  
           style={{
             flexDirection: "row",
@@ -67,7 +69,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Headache</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye Strain</Text>
         </View>
-        <Text style={{fontSize: 32, color: '#FFFFFF', padding: 15}}>Mood</Text>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
         <View  
           style={{
             flexDirection: "row",
@@ -94,7 +96,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Isolated</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Hopeful</Text>
         </View>
-        <Text style={{fontSize: 32, color: '#FFFFFF', padding: 15}}>Journal</Text>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Journal</Text>
         <TextInput
           style={{borderWidth: 12, height: 150, margin: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
           placeholder="How are you feeling today? In what ways do you need support? What have you accomplished today?"
@@ -103,6 +105,7 @@ function UpdatesHomeScreen() {
           defaultValue={text}
           multiline={true}
         />
+        <Image source={images.micIcon} style={{left: 365, top: -60}}/>
         <TouchableOpacity style={styles.saveButton}> 
           <Text style={styles.saveText}>Save</Text>
         </TouchableOpacity>
