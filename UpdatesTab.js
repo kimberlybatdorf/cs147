@@ -41,7 +41,19 @@ function UpdatesHomeScreen() {
 
   function CreateNewPostScreen() {
     const [text, setText] = useState('');
+    const [saved, savePost] = useState(false);
     const navigation = useNavigation();
+    const onSavePress = () => savePost(true);
+    const [checked1, check1] = useState(false);
+    const [checked2, check2] = useState(false);
+    const [checked3, check3] = useState(false);
+    const [checked4, check4] = useState(false);
+    const [checked5, check5] = useState(false);
+    const [checked6, check6] = useState(false);
+    const [checked7, check7] = useState(false);
+    const [checked8, check8] = useState(false);
+    const [checked9, check9] = useState(false);
+    const [checked10, check10] = useState(false);
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
@@ -59,11 +71,11 @@ function UpdatesHomeScreen() {
             padding: 15,
             justifyContent: 'space-evenly'
         }}>
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check1(true)}} disableBuiltInState={saved} isChecked={checked1}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check2(true)}} disableBuiltInState={saved} isChecked={checked2} />
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check3(true)}} disableBuiltInState={saved} isChecked={checked3} />
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check4(true)}} disableBuiltInState={saved} isChecked={checked4} />
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check5(true)}} disableBuiltInState={saved} isChecked={checked5} />
         </View>
         <View  
           style={{
@@ -86,11 +98,11 @@ function UpdatesHomeScreen() {
             height: 100,
             padding: 20
         }}>
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {}} />
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check6(true)}} disableBuiltInState={saved} isChecked={checked6}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check7(true)}} disableBuiltInState={saved} isChecked={checked7}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check8(true)}} disableBuiltInState={saved} isChecked={checked8}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check9(true)}} disableBuiltInState={saved} isChecked={checked9}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check10(true)}} disableBuiltInState={saved} isChecked={checked10}/>
         </View>
         <View  
           style={{
@@ -114,9 +126,10 @@ function UpdatesHomeScreen() {
           onChangeText={newText => setText(newText)}
           defaultValue={text}
           multiline={true}
+          editable={saved ? false : true}
         />
         <Image source={images.micIcon} style={{left: 365, top: -60}}/>
-        <TouchableOpacity style={styles.saveButton}> 
+        <TouchableOpacity style={styles.saveButton} onPress={onSavePress}> 
           <Text style={styles.saveText}>Save</Text>
         </TouchableOpacity>
       </SafeAreaView>
