@@ -41,10 +41,13 @@ function UpdatesHomeScreen() {
 
   function CreateNewPostScreen() {
     const [text, setText] = useState('');
+    const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Image style={{left: 20}} source={images.backArrow}/>
+          <Pressable onPress ={() => navigation.navigate('UpdatesHomeScreen')}>
+            <Image style={{left: 20}} source={images.backArrow}/>
+          </Pressable>
           <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 12</Text>
           <Image style={{marginTop: 3, left: 100, top: -5}} source={images.unlockedIcon}/>
         </View>
@@ -124,10 +127,13 @@ function UpdatesHomeScreen() {
 
   function MoreInformationScreen() {
     const [text, setText] = useState('');
+    const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Image style={{left: 20}} source={images.backArrow}/>
+          <Pressable onPress ={() => navigation.navigate('UpdatesHomeScreen')}>
+            <Image style={{left: 20}} source={images.backArrow}/>
+          </Pressable>
           <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 20</Text>
         </View>
          <View style={{flexDirection: "row", top: 5}}>
@@ -142,7 +148,7 @@ function UpdatesHomeScreen() {
        padding: 5,
        backgroundColor: '#313033',
        borderColor: '#313033', top: 5}}>
-          <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>THIS IS A JOURNAL ENTRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!AKHFAKJSDFAKJSDHFAJKSDFJKSDFKJSDJK</Text>
+          <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
         </View>
 <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
         <View  
