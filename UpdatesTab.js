@@ -5,6 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import Grid from 'react-native-grid-component';
+import React, { useState } from "react;"
 
 
 function UpdatesHomeScreen() {
@@ -16,18 +18,28 @@ function UpdatesHomeScreen() {
         <Pressable onPress ={() => navigation.navigate('CreateNewPostScreen')}>
           <Ionicons name="add-circle-outline" size={32} color="green" />
           </Pressable>
+          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+          <Ionicons name="grid-outline" size={32} color="green" />
+          </Pressable>
         <Image source={images.updatesFilled}/>
       </SafeAreaView>
     );
   }
 
+const imageArray= new Array(11).fill("https://thumbs.dreamstime.com/b/two-cute-golden-retriever-puppies-playing-photo-45116795.jpg");
+
+function renderItem( { item }) {
+    return <Image source={{uri : item }} style= {{ height: 100} } />;
+}
+
+ function Griddy2() {
+    const [images, setImages] = useSet(imageArr);
+    return <Flatlist data={images} renderItem={renderItem} />;
+}
   function AllUpdatesGrid() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <Text style={styles.screenText}>Your Updates</Text>
-        <Image source={images.updatesFilled}/>
-      </SafeAreaView>
-    );
+    const [images, setImages] = useSet(imageArr);
+    return <Flatlist data={images} renderItem={renderItem} />;
+
   }
 
   function CreateNewPostScreen() {
