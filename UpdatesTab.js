@@ -6,7 +6,7 @@ import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import Grid from 'react-native-grid-component';
-import React, { useState } from "react;"
+import React, { useState } from 'react';
 
 
 function UpdatesHomeScreen() {
