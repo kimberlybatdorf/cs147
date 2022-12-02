@@ -25,10 +25,10 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
           <ScrollView>
             <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center'}}>
               <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 70, fontWeight: 'bold'}}>Physical Patterns</Text>
-              <Text style={{fontSize: 18, color: '#FFFFFF', paddingTop: 10}}>A summary of your physical symptoms over the past three months.</Text>
+              <Text style={{fontSize: 18, color: '#FFFFFF', paddingTop: 10, paddingLeft: 9}}>A summary of your physical symptoms over the past three months.</Text>
               <Image style={{marginTop: 20}} source={images.physicalGraph}/>
               <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 30, fontWeight: 'bold'}}>Mental Patterns</Text>
-              <Text style={{fontSize: 20, color: '#FFFFFF', paddingTop: 10}}>texteteakdfhasdjfh</Text>
+              <Text style={{fontSize: 18, color: '#FFFFFF', paddingTop: 10, paddingLeft: 9}}>A summary of your mental wellbeing over the past three months.</Text>
               <Image style={{marginTop: 20}} source={images.mentalGraph}/>
               <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 30, paddingBottom: 10, fontWeight: 'bold'}}>One Month Ago</Text>
               <Text style={{fontSize: 20, color: '#FFFFFF', paddingTop: 10, alignSelf: 'flex-start', paddingLeft: 20, fontWeight: 'bold'}}>You said...</Text>
