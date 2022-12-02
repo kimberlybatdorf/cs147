@@ -11,6 +11,8 @@ const images = {
     plusButton: require('./PLUSBUTTON.png'),
     shareIcon: require('./SHAREICON.png'),
     unlockedIcon: require('./UNLOCKEDICON.png'),
+    physicalGraph: require('./graph.png'),
+    mentalGraph: require('./graph2.png')
   };
   
   export default images;

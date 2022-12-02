@@ -1,4 +1,4 @@
-import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase } from "react-native";
+import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native";
@@ -22,7 +22,13 @@ import UpdatesTab from "./UpdatesTab";
       function AnalyticsScreen() {
         return (
           <SafeAreaView style={styles.container}>
-            <Text style={styles.screenText}>Analytics</Text>
+            <ScrollView>
+              <Text style={styles.screenText}>Physical Patterns</Text>
+              <Image source={images.physicalGraph}/>
+              <Text style={styles.screenText}>Mental Patterns</Text>
+              <Image source={images.mentalGraph}/>
+              <Text style={styles.screenText}>One Month Ago...</Text>
+            </ScrollView>
           </SafeAreaView>
         );
       }
@@ -67,7 +73,7 @@ export default function App() {
             
 
         <Tab.Screen options={{headerShown: false}} name="Updates" component={UpdatesTab} />
-        <Tab.Screen name="Analytics" component={AnalyticsScreen} />
+        <Tab.Screen options={{headerShown: false}} name="Analytics" component={AnalyticsScreen} />
         <Tab.Screen name="Community" component={CommunityScreen} />
           </Tab.Navigator>
           </NavigationContainer>
@@ -81,7 +87,7 @@ const styles = StyleSheet.create({
     container: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: '#B3B3B3',
+      backgroundColor: '#464646',
       flex: 1,
     },
     button: {
