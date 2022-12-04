@@ -638,7 +638,7 @@ function UpdatesHomeScreen() {
             <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
           </View>
           <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
-            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>today honestly almost felt normal... got to see some friends and even though i left early i still am really happy that i got to spend time with others even for just a little bit</Text>
           </View>
         </View>
         <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
@@ -679,10 +679,10 @@ function UpdatesHomeScreen() {
             height: 100,
             padding: 20
         }}>
-          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
         </View>
         <View  
@@ -721,7 +721,7 @@ function UpdatesHomeScreen() {
             <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
           </View>
           <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
-            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}></Text>
           </View>
         </View>
         <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
@@ -733,10 +733,10 @@ function UpdatesHomeScreen() {
             padding: 15,
             justifyContent: 'space-evenly'
         }}>
-          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
         </View>
         <View  
@@ -763,10 +763,10 @@ function UpdatesHomeScreen() {
             padding: 20
         }}>
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
         </View>
         <View  
           style={{
@@ -804,7 +804,7 @@ function UpdatesHomeScreen() {
             <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
           </View>
           <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
-            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}></Text>
           </View>
         </View>
         <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
@@ -887,7 +887,7 @@ function UpdatesHomeScreen() {
             <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
           </View>
           <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
-            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>the past few days were pretty busy and i'm honestly pretty winded from it all and am just taking time to catch up on rest</Text>
           </View>
         </View>
         <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
@@ -902,7 +902,7 @@ function UpdatesHomeScreen() {
           <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
         </View>
         <View  
@@ -930,8 +930,8 @@ function UpdatesHomeScreen() {
         }}>
           <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
-          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
           <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
         </View>
         <View  
