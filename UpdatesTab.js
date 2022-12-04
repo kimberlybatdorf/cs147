@@ -5,10 +5,15 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+<<<<<<< HEAD
 //import Grid from 'react-native-grid-component';
 import React, { useState } from "react";
 import { Col, Row, Grid } from "react-native-easy-grid";
 
+=======
+import Grid from 'react-native-grid-component';
+import React, { useState } from 'react';
+>>>>>>> adb2e5712f4bb0b5da7c61afdad45150d7b8961c
 
 
 function UpdatesHomeScreen() {
