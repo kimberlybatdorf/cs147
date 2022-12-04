@@ -11,6 +11,8 @@ const images = {
     plusButton: require('./PLUSBUTTON.png'),
     shareIcon: require('./SHAREICON.png'),
     unlockedIcon: require('./UNLOCKEDICON.png'),
+    lockedIcon: require('./LOCKEDICON.png'),
+    speakerIcon: require('./SPEAKERICON.png')
   };
   
   export default images;
