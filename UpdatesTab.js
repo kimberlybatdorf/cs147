@@ -63,7 +63,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 12</Text>
           <Image style={{marginTop: 3, left: 100, top: -5}} source={images.unlockedIcon}/>
         </View>
-        <View style={{backgroundColor: '#4c4c4c', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 20}}>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 20}}>
         <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Symptoms</Text>
         <View  
           style={{
@@ -93,7 +93,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye Strain</Text>
         </View>
         </View>
-        <View style={{backgroundColor: '#4c4c4c', borderRadius: 7, top: 40, alignSelf: 'center', width: '96%', paddingBottom: 15}}>
+        <View style={{backgroundColor: '#404040', borderRadius: 7, top: 40, alignSelf: 'center', width: '96%', paddingBottom: 15}}>
         <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Mood</Text>
         <View  
           style={{
@@ -122,7 +122,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
         </View>
         </View>
-        <View style={{backgroundColor: '#4c4c4c', top: 60, borderRadius: 7, width: '96%', alignSelf: 'center', height: 260}}>
+        <View style={{backgroundColor: '#404040', top: 60, borderRadius: 7, width: '96%', alignSelf: 'center', height: 260}}>
           <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
           <TextInput
             style={{fontStyle:'italic', borderWidth: 12, height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
