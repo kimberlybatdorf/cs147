@@ -5,8 +5,10 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import Grid from 'react-native-grid-component';
-import React, { useState } from "react;"
+//import Grid from 'react-native-grid-component';
+import React, { useState } from "react";
+import { Col, Row, Grid } from "react-native-easy-grid";
+
 
 
 function UpdatesHomeScreen() {
@@ -26,20 +28,21 @@ function UpdatesHomeScreen() {
     );
   }
 
-const imageArray= new Array(11).fill("https://thumbs.dreamstime.com/b/two-cute-golden-retriever-puppies-playing-photo-45116795.jpg");
 
-function renderItem( { item }) {
-    return <Image source={{uri : item }} style= {{ height: 100} } />;
-}
 
- function Griddy2() {
-    const [images, setImages] = useSet(imageArr);
-    return <Flatlist data={images} renderItem={renderItem} />;
-}
   function AllUpdatesGrid() {
-    const [images, setImages] = useSet(imageArr);
-    return <Flatlist data={images} renderItem={renderItem} />;
-
+    return(
+      <SafeAreaView>
+        <Text>testing something</Text>
+      <Grid>
+        <Col style= {{backgroundColor: "pink"}}></Col>
+        
+        <Col style= {{backgroundColor: "red"}}></Col>
+        
+      </Grid>
+      <Text>testing something</Text>
+      </SafeAreaView>
+    );
   }
 
   function CreateNewPostScreen() {
