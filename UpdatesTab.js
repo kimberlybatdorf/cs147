@@ -159,14 +159,7 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Journal</Text>
           <Image style={{marginTop: 3, left: 8, top: 10}} source={images.speakerIcon}/>
         </View>
-        <View style={{borderWidth: 1,
-        marginLeft: 18,
-        marginTop: 8, 
-       borderRadius: 15,
-       width: '80%',
-       padding: 5,
-       backgroundColor: '#313033',
-       borderColor: '#313033', top: 5}}>
+        <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033', top: 5}}>
           <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
         </View>
 <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
