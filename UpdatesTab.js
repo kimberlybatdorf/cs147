@@ -117,9 +117,9 @@ function UpdatesHomeScreen() {
         }}>
           <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -8}}>Satisfied</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -16}}>Isolated</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 0}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -4}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -3}}>Hopeful</Text>
         </View>
         </View>
         <View style={{backgroundColor: '#404040', top: 60, borderRadius: 7, width: '96%', alignSelf: 'center', height: 260}}>
@@ -155,14 +155,17 @@ function UpdatesHomeScreen() {
           </Pressable>
           <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 20</Text>
         </View>
-         <View style={{flexDirection: "row", top: 5}}>
-          <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Journal</Text>
-          <Image style={{marginTop: 3, left: 8, top: 10}} source={images.speakerIcon}/>
+        <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
+          <View style={{flexDirection: "row"}}>
+            <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
+            <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
+          </View>
+          <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+          </View>
         </View>
-        <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033', top: 5}}>
-          <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
-        </View>
-<Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
         <View  
           style={{
             flexDirection: "row",
@@ -190,6 +193,8 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Headache</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye Strain</Text>
         </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 50, width: '96%'}}>
         <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
         <View  
           style={{
@@ -213,9 +218,10 @@ function UpdatesHomeScreen() {
         }}>
           <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -8}}>Satisfied</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -16}}>Isolated</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 0}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -4}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -3}}>Hopeful</Text>
+        </View>
         </View>
       </SafeAreaView>
     );
