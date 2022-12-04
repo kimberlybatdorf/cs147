@@ -112,11 +112,11 @@ function UpdatesHomeScreen() {
             paddingLeft: 30,
             paddingRight: 30
         }}>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Happy</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Satisfied</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Isolated</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Hopeful</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -8}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -16}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
         </View>
         <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Journal</Text>
         <TextInput
@@ -212,11 +212,11 @@ function UpdatesHomeScreen() {
             paddingLeft: 30,
             paddingRight: 30
         }}>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Happy</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Satisfied</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Isolated</Text>
-          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Hopeful</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -8}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -16}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
         </View>
       </SafeAreaView>
     );
