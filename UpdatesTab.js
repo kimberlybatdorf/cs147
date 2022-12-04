@@ -63,7 +63,8 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 12</Text>
           <Image style={{marginTop: 3, left: 100, top: -5}} source={images.unlockedIcon}/>
         </View>
-        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Symptoms</Text>
+        <View style={{backgroundColor: '#4c4c4c', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 20}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Symptoms</Text>
         <View  
           style={{
             flexDirection: "row",
@@ -91,7 +92,9 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Headache</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF'}}>Eye Strain</Text>
         </View>
-        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
+        </View>
+        <View style={{backgroundColor: '#4c4c4c', borderRadius: 7, top: 40, alignSelf: 'center', width: '96%', paddingBottom: 15}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Mood</Text>
         <View  
           style={{
             flexDirection: "row",
@@ -118,17 +121,20 @@ function UpdatesHomeScreen() {
           <Text style={{fontSize: 12, color: '#FFFFFF', left: -16}}>Isolated</Text>
           <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Hopeful</Text>
         </View>
-        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Journal</Text>
-        <TextInput
-          style={{fontStyle:'italic', borderWidth: 12, height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
-          placeholder="How are you feeling today? In what ways do you need support? What have you accomplished today?"
-          placeholderTextColor='#E5E1E5'
-          onChangeText={newText => setText(newText)}
-          defaultValue={text}
-          multiline={true}
-          editable={saved ? false : true}
-        />
-        <Image source={images.micIcon} style={{left: 365, top: -60}}/>
+        </View>
+        <View style={{backgroundColor: '#4c4c4c', top: 60, borderRadius: 7, width: '96%', alignSelf: 'center', height: 260}}>
+          <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
+          <TextInput
+            style={{fontStyle:'italic', borderWidth: 12, height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
+            placeholder="How are you feeling today? In what ways do you need support? What have you accomplished today?"
+            placeholderTextColor='#E5E1E5'
+            onChangeText={newText => setText(newText)}
+            defaultValue={text}
+            multiline={true}
+            editable={saved ? false : true}
+          />
+          <Image source={images.micIcon} style={{left: 350, top: -45}}/>
+        </View>
         <TouchableOpacity style={styles.saveButton} onPress={onSavePress}> 
           <Text style={styles.saveText}>Save</Text>
         </TouchableOpacity>
@@ -280,7 +286,7 @@ const styles = StyleSheet.create({
       paddingBottom:10,
       backgroundColor:'green',
       borderRadius:15,
-      top: -10,
+      top: 70
     },
     saveText:{
         color:'#ffffff',
