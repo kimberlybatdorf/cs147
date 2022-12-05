@@ -1,4 +1,4 @@
-import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView } from "react-native";
+import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView, TextInput } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native";
@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import UpdatesTab from "./UpdatesTab";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
+import React, { useState } from 'react';
 
 
 
@@ -74,9 +75,22 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
       }
 
       function CommunityScreen() {
+        const [text, setText] = useState('');
         return (
           <SafeAreaView style={styles.container}>
-            <Text style={styles.screenText}>Community Screen</Text>
+            {/* PROFILE PICTURE */}
+            <TextInput
+              style={{fontStyle:'italic', borderWidth: 12, height: 100, width: '90%', marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
+              placeholder="Create new post."
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+            />
+            <Image 
+              source={images.micIcon}
+              // style={{left: 350, top: -45}}
+            />
           </SafeAreaView>
         );
       }
