@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase, Button } from "react-native";
+import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase, Button, ScrollView } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
@@ -10,13 +10,14 @@ import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { Col, Row, Grid } from "react-native-easy-grid";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Update from './Update';
 
 
 function UpdatesHomeScreen() {
     const navigation = useNavigation();
 
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container} >
         <Text style={styles.screenText}>Updates Screen</Text>
 
         <Pressable onPress ={() => navigation.navigate('CreateNewPostScreen')}>
@@ -33,71 +34,329 @@ function UpdatesHomeScreen() {
     );
   }
 
+  const updateData = [
+    {
+      id: '1', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '2', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '3', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '4', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '5', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '6', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '7', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '8', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '9', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '10', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '11', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '12', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '13', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '14', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '15', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '16', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '17', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+    {
+      id: '18', 
+      date: '12/05/22',
+      journalEntry: 'I feel less nautious today.',
+      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
+    },
+  ];
 
+
+const renderUpdate = ({ item, index }) => (
+  <Update
+  date = {item.date} 
+  journalEntry = {item.journalEntry}
+  imageUrl = {item.imageUrl}
+  />
+
+);
+
+
+
+const UpdatesList = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+    <FlatList 
+    data = {updateData}
+    keyExtractor = {(item) => item.id}
+
+    renderItem={(item) => renderUpdate(item)}
+    />
+  </SafeAreaView>
+  );
+}
+  function BetterAllUpdatesGrid(){
+    return(
+    <SafeAreaView>
+      <UpdatesList/>
+    </SafeAreaView>
+    )
+  }
 
   function AllUpdatesGrid() {
     const navigation = useNavigation();
     return(
-      <SafeAreaView style={styles.container}>
-        
+     
+    <ScrollView style={styles.scrollView}>
       <Grid>
         <Col style={styles.gridCol}>
-          <Row style={styles.gridRow}>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .....................</Text>
+
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/02/22</Text>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>11/29/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+
+
             </Pressable>
           </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/27/22</Text>
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/26/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+            </Pressable>
+          </Row>
+          </View>
         </Col>
         
         <Col style={styles.gridCol}>
-          <Row style={styles.gridRow}>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
+
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+
+              
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .....................</Text>
+
+
             </Pressable>
           </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+            </Pressable>
+          </Row>
+          </View>
         </Col>
 
         <Col style={styles.gridCol}>
-          <Row style={styles.gridRow}>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .................</Text>
+
+
             </Pressable>
           </Row>
-          <Row style={styles.gridRow}>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={{ fontSize: 30}}>12/03/22</Text>
+              <Text style={styles.gridText}>12/03/22</Text>
+              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
+
+
             </Pressable>
           </Row>
-        </Col>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+              
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+              
+            </Pressable>
+          </Row>
+          </View>
+        </Col>        
         
       </Grid>
-    
-      </SafeAreaView>
+      </ScrollView>
+     
+      
     );
   }
 
@@ -341,10 +600,39 @@ const styles = StyleSheet.create({
       },
     gridRow:{
       borderWidth: 1,
+      borderColor:'#FFFFFF',
+      height: 30,
     },
     gridCol: {
       borderWidth: 0.5,
-        color: '#FFFFFF'
+       borderColor:'#FFFFFF',
+    },
+    gridText:{
+      color: "white",
+      fontSize: 30,
+    },
+    gridPic: {
+      justifyContent: "center",
+      alignItems: "center",
+      marginLeft:35, 
+      marginRight: 15, 
+      marginTop: 25, 
+      borderRadius: 15, 
+    },
+    scrollView: {
+      flex: 1,
+      backgroundColor: '#464646'
+
+      //justifyContent: 'space-between',
+    },
+    gridJournal: {
+      borderWidth: 1,
+      backgroundColor: '#313033',
+      color: '#FFFFFF',
+      marginLeft: 15, 
+      marginRight: 15, 
+      marginTop: 15, 
+      borderRadius: 15, 
     },
     saveButton:{
       marginRight:40,
