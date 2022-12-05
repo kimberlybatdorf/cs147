@@ -78,19 +78,31 @@ import React, { useState } from 'react';
         const [text, setText] = useState('');
         return (
           <SafeAreaView style={styles.container}>
-            {/* PROFILE PICTURE */}
-            <TextInput
-              style={{fontStyle:'italic', borderWidth: 12, height: 100, width: '90%', marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
-              placeholder="Create new post."
-              placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
-              defaultValue={text}
-              multiline={true}
-            />
-            <Image 
-              source={images.micIcon}
-              // style={{left: 350, top: -45}}
-            />
+            <View 
+              style={{
+                flexDirection: 'row',
+                width: '90%',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              <Image 
+                source={images.profileIcon}
+                // style={{top: -20, left: 30}}
+              />
+              <TextInput
+                style={{fontStyle:'italic', borderWidth: 12, height: 100, width: '80%%', marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18, left: 30}}
+                placeholder="Create new post."
+                placeholderTextColor='#E5E1E5'
+                onChangeText={newText => setText(newText)}
+                defaultValue={text}
+                multiline={true}
+              />            
+              <Image 
+                source={images.micIcon}
+                style={{left: -60, top: 30}}
+              />
+            </View>
           </SafeAreaView>
         );
       }

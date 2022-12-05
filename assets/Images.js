@@ -14,7 +14,8 @@ const images = {
     lockedIcon: require('./LOCKEDICON.png'),
     speakerIcon: require('./SPEAKERICON.png'),
     physicalGraph: require('./graph.png'),
-    mentalGraph: require('./graph2.png')
+    mentalGraph: require('./graph2.png'),
+    profileIcon: require('./profileicon.png')
   };
   
   export default images;
