@@ -184,12 +184,10 @@ const UpdatesList = () => {
     <ScrollView style={styles.scrollView}>
       <Grid>
         <Col style={styles.gridCol}>
-          <View style={{height: 242}}>
+          <View style={{height: 242, marginTop: 35}}>
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .....................</Text>
+              <Text style={styles.gridText}>12/05/22</Text>
 
 
             </Pressable>
@@ -199,7 +197,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>12/02/22</Text>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
 
             </Pressable>
           </Row>
@@ -208,7 +205,102 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>11/29/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
+
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/26/22</Text>
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/23/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/20/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+        </Col>
+        
+        <Col style={styles.gridCol}>
+          <View style={{height: 242, marginTop: 35}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/04/22</Text>
+
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/01/22</Text>
+
+              
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/28/22</Text>
+
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/25/22</Text>
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/22/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/19/22</Text>
+            </Pressable>
+          </Row>
+          </View>
+        </Col>
+
+        <Col style={styles.gridCol}>
+          <View style={{height: 242, marginTop: 35}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>12/03/22</Text>
+
+
+            </Pressable>
+          </Row>
+          </View>
+          <View style={{height: 242}}>
+          <Row size={30} style={styles.gridRow}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
+              <Text style={styles.gridText}>11/30/22</Text>
 
 
             </Pressable>
@@ -219,32 +311,6 @@ const UpdatesList = () => {
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>11/27/22</Text>
 
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>11/26/22</Text>
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-            </Pressable>
-          </Row>
-          </View>
-        </Col>
-        
-        <Col style={styles.gridCol}>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
-
 
             </Pressable>
           </Row>
@@ -252,10 +318,7 @@ const UpdatesList = () => {
           <View style={{height: 242}}>
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
-
-              
+              <Text style={styles.gridText}>11/24/22</Text>
 
             </Pressable>
           </Row>
@@ -263,82 +326,7 @@ const UpdatesList = () => {
           <View style={{height: 242}}>
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .....................</Text>
-
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-            </Pressable>
-          </Row>
-          </View>
-        </Col>
-
-        <Col style={styles.gridCol}>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
-
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Image style= {styles.gridPic} source={images.updatesFilled}/>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah  .................</Text>
-
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-              <Text style= {styles.gridJournal}>This is a journal entry. write write write blah blah blah birwbifbeibwiubiwbituwbigubibt jgeh weeih eg.....................</Text>
-
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
-
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
+              <Text style={styles.gridText}>11/21/22</Text>
               
             </Pressable>
           </Row>
@@ -346,7 +334,7 @@ const UpdatesList = () => {
           <View style={{height: 242}}>
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
-              <Text style={styles.gridText}>12/03/22</Text>
+              <Text style={styles.gridText}>11/18/22</Text>
               
             </Pressable>
           </Row>
@@ -610,6 +598,7 @@ const styles = StyleSheet.create({
     gridText:{
       color: "white",
       fontSize: 30,
+      marginTop: 90,
     },
     gridPic: {
       justifyContent: "center",
