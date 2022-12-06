@@ -188,8 +188,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>12/05/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -205,8 +203,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>11/29/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -239,8 +235,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>12/04/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -292,8 +286,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>12/03/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -301,8 +293,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>11/30/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -310,8 +300,6 @@ const UpdatesList = () => {
           <Row size={30} style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen')}>
               <Text style={styles.gridText}>11/27/22</Text>
-
-
             </Pressable>
           </Row>
           </View>
@@ -611,6 +599,7 @@ const styles = StyleSheet.create({
     scrollView: {
       flex: 1,
       backgroundColor: '#464646'
+      
 
       //justifyContent: 'space-between',
     },
