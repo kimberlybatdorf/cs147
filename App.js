@@ -21,7 +21,15 @@ import React, { useState } from 'react';
       }
 
 
-      function AnalyticsScreen() {
+    function forumPost() {
+      return (
+        <SafeAreaView>
+          
+        </SafeAreaView>
+      );
+    }
+
+    function AnalyticsScreen() {
         return (
           <ScrollView>
             <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center'}}>
