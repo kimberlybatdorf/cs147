@@ -1,7 +1,7 @@
 import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView, TextInput } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import UpdatesTab from "./UpdatesTab";
@@ -21,10 +21,10 @@ import React, { useState } from 'react';
       }
 
 
-    function forumPost() {
+    function ForumPost() {
       return (
         <SafeAreaView>
-          
+          <Text>hi</Text>
         </SafeAreaView>
       );
     }
@@ -84,6 +84,7 @@ import React, { useState } from 'react';
 
       function CommunityScreen() {
         const [text, setText] = useState('');
+        const navigation = useNavigation();
         return (
           <SafeAreaView style={styles.container}>
             <View style={{
@@ -219,6 +220,7 @@ import React, { useState } from 'react';
                   }}
                 />
               </View>
+              <Pressable onPress={() => navigation.navigate('ForumPost')}>
               <View style={{
                 width: '90%'
               }}>
@@ -240,6 +242,7 @@ import React, { useState } from 'react';
                   </Text>
                 </View>
               </View>
+              </Pressable>
             </View>
           </View>
           <View style={{
