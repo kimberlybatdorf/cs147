@@ -96,13 +96,15 @@ import React, { useState } from 'react';
               <Image 
                 source={images.icon}
                 style={{
-                  left: -10
+                  left: -10,
+                  top: -7
                 }}
               />
-              <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', left: -5}}>Recovery Grow</Text>
+              <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', left: -5, top: -6}}>Recovery Grow</Text>
               <Image 
                 source={images.profileIcon}
                 style={{
+                  top: -5
                 }}
               />
             </View>
@@ -110,7 +112,6 @@ import React, { useState } from 'react';
               borderColor: '#616161',
               borderBottomWidth: 1,
               width: '97%',
-              // top: -84
             }}/>
             <View 
               style={{
