@@ -162,6 +162,198 @@ function ForumPost() {
         alignSelf: 'center',
         top: 50
       }}/>
+      <ScrollView>
+      <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 60,
+      alignItems: 'center',
+      height: 100
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 80, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 70,
+      alignItems: 'center',
+      height: 100
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 80, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 80,
+      alignItems: 'center',
+      height: 100
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 80, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 90,
+      alignItems: 'center',
+      height: 100
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 80, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 100,
+      alignItems: 'center',
+      height: 100
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 80, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    </ScrollView>
     </SafeAreaView>
   );
 }
