@@ -193,7 +193,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
               defaultValue={text}
               multiline={true}
               editable={false}
@@ -231,7 +230,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
               defaultValue={text}
               multiline={true}
               editable={false}
@@ -269,7 +267,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
               defaultValue={text}
               multiline={true}
               editable={false}
@@ -307,7 +304,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
               defaultValue={text}
               multiline={true}
               editable={false}
@@ -345,7 +341,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              onChangeText={newText => setText(newText)}
               defaultValue={text}
               multiline={true}
               editable={false}
@@ -425,7 +420,6 @@ function CommunityScreen() {
           }}
           placeholder="Create new post..."
           placeholderTextColor='#E5E1E5'
-          onChangeText={newText => setText(newText)}
           defaultValue={text}
           multiline={true}
         />            
