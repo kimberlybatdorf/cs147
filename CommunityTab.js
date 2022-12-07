@@ -85,14 +85,22 @@ function ForumPost() {
     </View>
     <View style={{
       flexDirection: 'row',
-      width: '90%'
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 30,
+      alignItems: 'center',
+      height: 80
     }}>
-      <Image source={images.profileIcon}/>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
       <TextInput
               style={{
                 fontStyle:'italic', 
                 borderWidth: 12, 
-                height: 180, 
+                height: 60, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -101,7 +109,9 @@ function ForumPost() {
                 backgroundColor: '#313033', 
                 color: '#FFFFFF', 
                 fontSize: 18,
-                width: '90%'
+                width: '77%',
+                left: 15,
+                top: -7
               }}
               placeholder="Add a reply..."
               placeholderTextColor='#E5E1E5'
