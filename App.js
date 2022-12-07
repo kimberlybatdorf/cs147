@@ -148,7 +148,7 @@ import React, { useState } from 'react';
                   fontSize: 18,
                   left: 5
                 }}
-                placeholder="Create new post."
+                placeholder="Create new post..."
                 placeholderTextColor='#E5E1E5'
                 onChangeText={newText => setText(newText)}
                 defaultValue={text}
