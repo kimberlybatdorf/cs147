@@ -9,6 +9,34 @@ function ForumPost() {
   const [text, setText] = useState(''); 
   return (
     <SafeAreaView style={styles.container}>
+            <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between"
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            left: 6,
+            top: -7
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 10}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: 20
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
       <View style={{
       backgroundColor: '#404040',
       flexDirection: 'row',
@@ -84,12 +112,19 @@ function ForumPost() {
       </View>
     </View>
     <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 25
+      }}/>
+    <View style={{
       flexDirection: 'row',
       width: '97%',
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 30,
+      top: 40,
       alignItems: 'center',
       height: 80
     }}>
@@ -120,6 +155,13 @@ function ForumPost() {
               multiline={true}
       />
     </View>
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center',
+        top: 50
+      }}/>
     </SafeAreaView>
   );
 }
