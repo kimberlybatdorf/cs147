@@ -1,16 +1,115 @@
 import React, { useState } from 'react';
 import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase, Button, ScrollView } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 function ForumPost() {
+  const [text, setText] = useState(''); 
   return (
-    <SafeAreaView>
-      <Text>hi</Text>
+    <SafeAreaView style={styles.container}>
+      <View style={{
+      backgroundColor: '#404040',
+      flexDirection: 'row',
+      width: '97%',
+      borderRadius: 7,
+      top: 15,
+      height: 130,
+      alignSelf: 'center'
+    }}>
+      <Image source={images.profileIcon}
+        style={{
+          left: 15,
+          // top: 10,
+          alignSelf: 'center'
+        }}
+      />
+      <View style={{
+        left: 30,
+        top: 10
+      }}>
+        <View style={{
+          flexDirection: 'row',
+          alignItems: 'flex-start'
+        }}>
+          <View style={{
+            backgroundColor: 'green',
+            borderRadius: 7,
+            width: 130
+            }}>
+            <Text style={{
+              color: 'white',
+              alignSelf: 'center',
+              fontSize: 16
+              }}>
+              Mental Health
+            </Text>
+          </View>
+          <Image 
+            source={images.smallSpeaker}
+            style={{
+              top: -6,
+              left: 4
+            }}
+          />
+        </View>
+        <Pressable onPress={() => navigation.navigate('ForumPost')}>
+        <View style={{
+          width: '90%'
+        }}>
+          <Text style={{
+            color: 'white',
+            fontSize: 20
+          }}>
+            how to explain concussion symptoms to friends?
+          </Text>
+          <View style={{
+            backgroundColor: '#313033',
+            top: 10,
+            borderRadius: 7
+          }}>
+            <Text style={{
+              color: 'white',
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
+            }}>
+              this is preview text.......
+            </Text>
+          </View>
+        </View>
+        </Pressable>
+      </View>
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '90%'
+    }}>
+      <Image source={images.profileIcon}/>
+      <TextInput
+              style={{
+                fontStyle:'italic', 
+                borderWidth: 12, 
+                height: 180, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '90%'
+              }}
+              placeholder="Add a reply..."
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+      />
+    </View>
     </SafeAreaView>
   );
 }
@@ -165,11 +264,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -234,11 +337,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -302,11 +409,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -370,11 +481,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -438,11 +553,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -506,11 +625,15 @@ function CommunityScreen() {
           </Text>
           <View style={{
             backgroundColor: '#313033',
-            top: 10
+            top: 10,
+            borderRadius: 7
           }}>
             <Text style={{
               color: 'white',
-              fontSize: 16
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
             }}>
               this is preview text.......
             </Text>
@@ -530,6 +653,7 @@ export default function CommunityTab(){
         
       <Stack.Navigator>
         <Stack.Screen options={{headerShown: false}} name="CommunityScreen" component={CommunityScreen}/>
+        <Stack.Screen options={{headerShown: false}} name="ForumPost" component={ForumPost}/>
     </Stack.Navigator>
     );
 
