@@ -82,7 +82,6 @@ function ForumPost() {
             }}
           />
         </View>
-        <Pressable onPress={() => navigation.navigate('ForumPost')}>
         <View style={{
           width: '90%'
         }}>
@@ -108,7 +107,6 @@ function ForumPost() {
             </Text>
           </View>
         </View>
-        </Pressable>
       </View>
     </View>
     <View style={{
