@@ -80,7 +80,7 @@ import React, { useState } from 'react';
           <SafeAreaView style={styles.container}>
             <View style={{
               flexDirection: 'row',
-              top: -90,
+              // top: -50,
               width: '90%',
               alignItems: 'center',
               justifyContent: "space-between"
@@ -102,7 +102,7 @@ import React, { useState } from 'react';
               borderColor: '#616161',
               borderBottomWidth: 1,
               width: '97%',
-              top: -84
+              // top: -84
             }}/>
             <View 
               style={{
@@ -115,7 +115,7 @@ import React, { useState } from 'react';
                 width: '97%',
                 height: 120,
                 alignSelf: 'center',
-                top: -75
+                top: 8
               }}
             >
               <Image 
@@ -148,7 +148,7 @@ import React, { useState } from 'react';
             </View>
             <Image
               style={{
-                top: -135,
+                top: -45,
                 left: 160
               }}
               source={images.micIcon}
@@ -157,15 +157,22 @@ import React, { useState } from 'react';
               borderColor: '#616161',
               borderBottomWidth: 1,
               width: '97%',
-              top: -100
+              top: -15
             }}/>
+          <ScrollView
+            style={{
+              top: -10,
+              width: '99%'
+            }}
+          >
           <View style={{
             backgroundColor: '#404040',
             flexDirection: 'row',
             width: '97%',
             borderRadius: 7,
             top: 15,
-            height: 130
+            height: 130,
+            alignSelf: 'center'
           }}>
             <Image source={images.profileIcon}
               style={{
@@ -232,7 +239,76 @@ import React, { useState } from 'react';
             width: '97%',
             borderRadius: 7,
             top: 30,
-            height: 130
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 45,
+            height: 130,
+            alignSelf: 'center'
           }}>
             <Image source={images.profileIcon}
               style={{
@@ -298,8 +374,9 @@ import React, { useState } from 'react';
             flexDirection: 'row',
             width: '97%',
             borderRadius: 7,
-            top: 45,
-            height: 130
+            top: 60,
+            height: 130,
+            alignSelf: 'center'
           }}>
             <Image source={images.profileIcon}
               style={{
@@ -326,7 +403,7 @@ import React, { useState } from 'react';
                     alignSelf: 'center',
                     fontSize: 16
                     }}>
-                    Mental Health
+                    Miscellaneous
                   </Text>
                 </View>
                 <Image 
@@ -360,6 +437,143 @@ import React, { useState } from 'react';
               </View>
             </View>
           </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 75,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 90,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          </ScrollView>
           </SafeAreaView>
         );
       }
