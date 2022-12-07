@@ -9,8 +9,6 @@ import CommunityTab from "./CommunityTab";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import React, { useState } from 'react';
 
-
-
     function UpdatesScreen() {
         return (
           <SafeAreaView style={styles.container}>
@@ -22,8 +20,37 @@ import React, { useState } from 'react';
 
     function AnalyticsScreen() {
         return (
+          <SafeAreaView style={styles.container}>
+            <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between",
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            top: -7,
+            left: -10
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: -10}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: -3
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
           <ScrollView>
-            <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center'}}>
+            <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center', top: -40}}>
               <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 70, fontWeight: 'bold'}}>Physical Patterns</Text>
               <Text style={{fontSize: 18, color: '#FFFFFF', paddingTop: 10, paddingLeft: 9}}>A summary of your physical symptoms over the past three months.</Text>
               <Image style={{marginTop: 20}} source={images.physicalGraph}/>
@@ -70,6 +97,7 @@ import React, { useState } from 'react';
               </View>
             </View>
           </ScrollView>
+          </SafeAreaView>
         );
       }
 
