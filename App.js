@@ -1,11 +1,13 @@
-import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView } from "react-native";
+import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView, TextInput } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import UpdatesTab from "./UpdatesTab";
+import CommunityTab from "./CommunityTab";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
+import React, { useState } from 'react';
 
 
 
@@ -18,8 +20,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
         );
       }
 
-
-      function AnalyticsScreen() {
+    function AnalyticsScreen() {
         return (
           <ScrollView>
             <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center'}}>
@@ -110,8 +111,8 @@ export default function App() {
             
 
         <Tab.Screen options={{headerShown: false}} name="Updates" component={UpdatesTab} />
-        <Tab.Screen name="Analytics" component={AnalyticsScreen} />
-        <Tab.Screen name="Community" component={CommunityScreen} />
+        <Tab.Screen options={{headerShown: false}} name="Analytics" component={AnalyticsScreen} />
+        <Tab.Screen options={{headerShown: false}} name="Community" component={CommunityTab} />
           </Tab.Navigator>
           </NavigationContainer>
         );
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
     container: {
       justifyContent: "center",
       alignItems: "center",
-      backgroundColor: '#B3B3B3',
+      backgroundColor: '#464646',
       flex: 1,
     },
     button: {
