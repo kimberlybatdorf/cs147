@@ -15,7 +15,9 @@ const images = {
     speakerIcon: require('./SPEAKERICON.png'),
     physicalGraph: require('./graph.png'),
     mentalGraph: require('./graph2.png'),
-    profileIcon: require('./profileicon.png')
+    profileIcon: require('./profileicon.png'),
+    smallSpeaker: require('./volume_up.png'),
+    icon: require('./icon.png')
   };
   
   export default images;

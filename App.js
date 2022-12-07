@@ -1,7 +1,7 @@
 import { StyleSheet, SafeAreaView, View, Text, Image, FlatList, List, ImageBackgroundBase, ScrollView, TextInput } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import UpdatesTab from "./UpdatesTab";
@@ -21,7 +21,15 @@ import React, { useState } from 'react';
       }
 
 
-      function AnalyticsScreen() {
+    function ForumPost() {
+      return (
+        <SafeAreaView>
+          <Text>hi</Text>
+        </SafeAreaView>
+      );
+    }
+
+    function AnalyticsScreen() {
         return (
           <ScrollView>
             <View style={{backgroundColor:'#464646', flexDirection: 'column', alignItems: 'center'}}>
@@ -76,33 +84,508 @@ import React, { useState } from 'react';
 
       function CommunityScreen() {
         const [text, setText] = useState('');
+        const navigation = useNavigation();
         return (
           <SafeAreaView style={styles.container}>
+            <View style={{
+              flexDirection: 'row',
+              // top: -50,
+              width: '90%',
+              alignItems: 'center',
+              justifyContent: "space-between"
+            }}>
+              <Image 
+                source={images.icon}
+                style={{
+                  left: -10,
+                  top: -7
+                }}
+              />
+              <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', left: -5, top: -6}}>Recovery Grow</Text>
+              <Image 
+                source={images.profileIcon}
+                style={{
+                  top: -5
+                }}
+              />
+            </View>
+            <View style={{
+              borderColor: '#616161',
+              borderBottomWidth: 1,
+              width: '97%',
+            }}/>
             <View 
               style={{
                 flexDirection: 'row',
-                width: '90%',
+                width: '80%',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                backgroundColor: '#404040',
+                borderRadius: 7,
+                width: '97%',
+                height: 120,
+                alignSelf: 'center',
+                top: 8
               }}
             >
               <Image 
                 source={images.profileIcon}
-                // style={{top: -20, left: 30}}
+                style={{left: 8}}
               />
               <TextInput
-                style={{fontStyle:'italic', borderWidth: 12, height: 100, width: '80%%', marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18, left: 30}}
-                placeholder="Create new post."
+                style={{
+                  fontStyle:'italic', 
+                  borderWidth: 12, 
+                  height: 100, 
+                  width: '80%%', 
+                  marginLeft: 15, 
+                  marginRight: 15, 
+                  marginTop: 15, 
+                  borderRadius: 15, 
+                  borderColor: '#313033', 
+                  backgroundColor: '#313033', 
+                  color: '#FFFFFF', 
+                  top: -7,
+                  fontSize: 18,
+                  left: 5
+                }}
+                placeholder="Create new post..."
                 placeholderTextColor='#E5E1E5'
                 onChangeText={newText => setText(newText)}
                 defaultValue={text}
                 multiline={true}
               />            
-              <Image 
-                source={images.micIcon}
-                style={{left: -60, top: 30}}
-              />
             </View>
+            <Image
+              style={{
+                top: -45,
+                left: 160
+              }}
+              source={images.micIcon}
+            />
+            <View style={{
+              borderColor: '#616161',
+              borderBottomWidth: 1,
+              width: '97%',
+              top: -15
+            }}/>
+          <ScrollView
+            style={{
+              top: -10,
+              width: '99%'
+            }}
+          >
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 15,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Mental Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <Pressable onPress={() => navigation.navigate('ForumPost')}>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+              </Pressable>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 30,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 45,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Mental Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 60,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Miscellaneous
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 75,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={{
+            backgroundColor: '#404040',
+            flexDirection: 'row',
+            width: '97%',
+            borderRadius: 7,
+            top: 90,
+            height: 130,
+            alignSelf: 'center'
+          }}>
+            <Image source={images.profileIcon}
+              style={{
+                left: 15,
+                // top: 10,
+                alignSelf: 'center'
+              }}
+            />
+            <View style={{
+              left: 30,
+              top: 10
+            }}>
+              <View style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start'
+              }}>
+                <View style={{
+                  backgroundColor: 'green',
+                  borderRadius: 7,
+                  width: 130
+                  }}>
+                  <Text style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontSize: 16
+                    }}>
+                    Physical Health
+                  </Text>
+                </View>
+                <Image 
+                  source={images.smallSpeaker}
+                  style={{
+                    top: -6,
+                    left: 4
+                  }}
+                />
+              </View>
+              <View style={{
+                width: '90%'
+              }}>
+                <Text style={{
+                  color: 'white',
+                  fontSize: 20
+                }}>
+                  how to explain concussion symptoms to friends?
+                </Text>
+                <View style={{
+                  backgroundColor: '#313033',
+                  top: 10
+                }}>
+                  <Text style={{
+                    color: 'white',
+                    fontSize: 16
+                  }}>
+                    this is preview text.......
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          </ScrollView>
           </SafeAreaView>
         );
       }
@@ -138,7 +621,7 @@ export default function App() {
 
         <Tab.Screen options={{headerShown: false}} name="Updates" component={UpdatesTab} />
         <Tab.Screen options={{headerShown: false}} name="Analytics" component={AnalyticsScreen} />
-        <Tab.Screen name="Community" component={CommunityScreen} />
+        <Tab.Screen options={{headerShown: false}} name="Community" component={CommunityScreen} />
           </Tab.Navigator>
           </NavigationContainer>
         );
