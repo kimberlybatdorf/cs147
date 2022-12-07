@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase, Button, ScrollView } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -11,6 +11,7 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Update from './Update';
+import { supabase } from './Supabase';
 
 
 function UpdatesHomeScreen() {
@@ -28,6 +29,9 @@ function UpdatesHomeScreen() {
         </Pressable>
           <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
           <Ionicons name="grid-outline" size={32} color="green" />
+          </Pressable>
+          <Pressable onPress ={() => navigation.navigate('SupabaseSetup')}>
+          <Ionicons name="albums-outline" size={32} color="green" />
           </Pressable>
         <Image source={images.updatesFilled}/>
       </SafeAreaView>
@@ -332,6 +336,37 @@ const UpdatesList = () => {
      
       
     );
+  }
+
+  const SupabaseSetup: () => Node = () => {
+    const [items, setItems] = useState([]);
+    const getItems = async () => {
+
+      let { data: PostInformation, error } = await supabase
+      .from('PostInformation')
+      .select('*')
+      
+      return PostInformation
+    }
+
+    useEffect( () => {
+      getItems()
+      .then((postInformation) => {
+        console.log("postinformation", postInformation)
+        setItems(postInformation);
+      })
+
+    }, [])
+    
+    return(
+      <SafeAreaView>
+        <View>
+          <Text>Supabase</Text>
+
+        </View>
+
+      </SafeAreaView>
+    )
   }
 
   function CreateNewPostScreen() {
@@ -1214,6 +1249,8 @@ export default function UpdatesTab(){
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1127" component={MoreInformationScreen1127}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1128" component={MoreInformationScreen1128}/>
         <Stack.Screen options={{headerShown: false}} name="SharePostScreen" component={SharePostScreen}/>
+        <Stack.Screen options={{headerShown: false}} name="SupabaseSetup" component={SupabaseSetup}/>
+
 
 
     
