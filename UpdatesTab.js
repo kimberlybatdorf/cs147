@@ -204,7 +204,8 @@ const UpdatesList = () => {
         borderColor: '#616161',
         borderBottomWidth: 1,
         width: '97%',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginBottom: 20
       }}/>
     <ScrollView style={styles.scrollView}>
       <Grid>
@@ -1303,15 +1304,17 @@ const styles = StyleSheet.create({
         fontSize: 32,
       },
     gridRow:{
-      borderWidth: 1,
-      borderColor:'#FFFFFF',
+      borderWidth: 0.5,
+      borderColor:'#86CC9B',
       height: 200,
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      borderRadius: 15,
     },
     gridCol: {
       borderWidth: 0.5,
-       borderColor:'#FFFFFF',
+      borderColor:'#86CC9B',
+      borderRadius: 15,
     },
     gridText:{
       color: "white",
