@@ -349,7 +349,7 @@ function ForumPost1() {
   const [text, setText] = useState(''); 
   return (
     <SafeAreaView style={styles.container}>
-            <View style={{
+      <View style={{
         flexDirection: 'row',
         width: '90%',
         alignItems: 'center',

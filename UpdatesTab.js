@@ -177,7 +177,35 @@ const UpdatesList = () => {
   function AllUpdatesGrid() {
     const navigation = useNavigation();
     return(
-     
+    <SafeAreaView style={styles.container}>
+      <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between"
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            left: 6,
+            top: -7
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: 20
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
     <ScrollView style={styles.scrollView}>
       <Grid>
         <Col style={styles.gridCol}>
@@ -333,8 +361,7 @@ const UpdatesList = () => {
         
       </Grid>
       </ScrollView>
-     
-      
+     </SafeAreaView>
     );
   }
 
