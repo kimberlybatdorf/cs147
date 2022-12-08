@@ -12,7 +12,9 @@ const images = {
     shareIcon: require('./SHAREICON.png'),
     unlockedIcon: require('./UNLOCKEDICON.png'),
     lockedIcon: require('./LOCKEDICON.png'),
-    speakerIcon: require('./SPEAKERICON.png')
+    speakerIcon: require('./SPEAKERICON.png'),
+    physicalGraph: require('./graph.png'),
+    mentalGraph: require('./graph2.png')
   };
   
   export default images;
