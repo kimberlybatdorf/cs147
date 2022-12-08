@@ -6,7 +6,6 @@ import { Ionicons } from '@expo/vector-icons';
 import images from "./assets/Images";
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
-//import Grid from 'react-native-grid-component';
 import { Col, Row, Grid } from "react-native-easy-grid";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { TouchableOpacity } from 'react-native-gesture-handler';
