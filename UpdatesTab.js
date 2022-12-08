@@ -209,44 +209,44 @@ const UpdatesList = () => {
     <ScrollView style={styles.scrollView}>
       <Grid>
         <Col style={styles.gridCol}>
-          <View style={{height: 242, marginTop: 35}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1128')}>
               <Text style={styles.gridText}>11/28</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1125')}>
               <Text style={styles.gridText}>11/25</Text>
 
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1122')}>
               <Text style={styles.gridText}>11/22</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1121')}>
               <Text style={styles.gridText}>11/19</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1124')}>
               <Text style={styles.gridText}>11/16</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1127')}>
               <Text style={styles.gridText}>11/13</Text>
             </Pressable>
@@ -255,49 +255,44 @@ const UpdatesList = () => {
         </Col>
         
         <Col style={styles.gridCol}>
-          <View style={{height: 242, marginTop: 35}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1127')}>
               <Text style={styles.gridText}>11/27</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1124')}>
               <Text style={styles.gridText}>11/24</Text>
-
-              
-
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1121')}>
               <Text style={styles.gridText}>11/21</Text>
-
-
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1120')}>
               <Text style={styles.gridText}>11/18</Text>
 
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1123')}>
               <Text style={styles.gridText}>11/15</Text>
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1126')}>
               <Text style={styles.gridText}>11/12</Text>
             </Pressable>
@@ -306,8 +301,8 @@ const UpdatesList = () => {
         </Col>
 
         <Col style={styles.gridCol}>
-          <View style={{height: 242, marginTop: 35}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1126')}>
               <Text style={styles.gridText}>11/26</Text>
 
@@ -315,8 +310,8 @@ const UpdatesList = () => {
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1123')}>
               <Text style={styles.gridText}>11/23</Text>
 
@@ -324,8 +319,8 @@ const UpdatesList = () => {
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1120')}>
               <Text style={styles.gridText}>11/20</Text>
 
@@ -333,32 +328,30 @@ const UpdatesList = () => {
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1123')}>
               <Text style={styles.gridText}>11/17</Text>
 
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1125')}>
               <Text style={styles.gridText}>11/14</Text>
               
             </Pressable>
           </Row>
           </View>
-          <View style={{height: 242}}>
-          <Row size={30} style={styles.gridRow}>
+          <View style={{height: 200}}>
+          <Row style={styles.gridRow}>
             <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1128')}>
               <Text style={styles.gridText}>11/11</Text>
-              
             </Pressable>
           </Row>
           </View>
         </Col>        
-        
       </Grid>
       </ScrollView>
      </SafeAreaView>
@@ -492,9 +485,11 @@ const UpdatesList = () => {
           />
           <Image source={images.micIcon} style={{left: 350, top: -45}}/>
         </View>
-        <TouchableOpacity style={styles.saveButton} onPress={onSavePress}> 
+        {/* <TouchableOpacity style={styles.saveButton} onPress={onSavePress}>  */}
+        <Pressable style={styles.saveButton} onPress ={() => navigation.navigate('AllUpdatesGrid')}>
           <Text style={styles.saveText}>Save</Text>
-        </TouchableOpacity>
+        {/* </TouchableOpacity> */}
+        </Pressable>
       </SafeAreaView>
     );
   }
@@ -1310,7 +1305,9 @@ const styles = StyleSheet.create({
     gridRow:{
       borderWidth: 1,
       borderColor:'#FFFFFF',
-      height: 30,
+      height: 200,
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     gridCol: {
       borderWidth: 0.5,
@@ -1319,7 +1316,6 @@ const styles = StyleSheet.create({
     gridText:{
       color: "white",
       fontSize: 30,
-      marginTop: 90,
     },
     gridPic: {
       justifyContent: "center",
