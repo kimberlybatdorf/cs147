@@ -1331,7 +1331,9 @@ const styles = StyleSheet.create({
     },
     scrollView: {
       flex: 1,
-      backgroundColor: '#464646'
+      backgroundColor: '#464646',
+      width:'90%',
+      alignSelf: 'center'
     },
     gridJournal: {
       borderWidth: 1,
