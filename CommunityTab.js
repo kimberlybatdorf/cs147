@@ -43,7 +43,7 @@ function ForumPost() {
       width: '97%',
       borderRadius: 7,
       top: 15,
-      height: 130,
+      height: 170,
       alignSelf: 'center'
     }}>
       <Image source={images.orange}
@@ -103,7 +103,7 @@ function ForumPost() {
               marginTop: 2,
               marginBottom: 2,
             }}>
-              this is preview text.......
+              I'm having a hard time explaining how difficult recovering from a concussion is... does anyone else feel this way?
             </Text>
           </View>
         </View>
@@ -114,7 +114,7 @@ function ForumPost() {
         borderBottomWidth: 1,
         width: '97%',
         alignSelf: 'center', 
-        top: 25
+        top: 30
       }}/>
     <View style={{
       flexDirection: 'row',
@@ -160,16 +160,15 @@ function ForumPost() {
         alignSelf: 'center',
         top: 50
       }}/>
-      <ScrollView>
+      <ScrollView style={{top: 60}}>
       <View style={{
       flexDirection: 'row',
       width: '97%',
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 60,
       alignItems: 'center',
-      height: 100
+      height: 200
     }}>
       <Image source={images.yellow} style={{
         left: 15
@@ -177,7 +176,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 80, 
+                height: 180, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -191,9 +190,8 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholder="I really feel this. Honestly I trust try to communicate as openly as possible and reassure my friends that I'm not actually flaking half the time and would love to hang out but simply need a lot of rest at the moment."
               placeholderTextColor='#E5E1E5'
-              defaultValue={text}
               multiline={true}
               editable={false}
       />
@@ -204,9 +202,9 @@ function ForumPost() {
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 70,
+      top: 10,
       alignItems: 'center',
-      height: 100
+      height: 70
     }}>
       <Image source={images.blue} style={{
         left: 15
@@ -214,7 +212,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 80, 
+                height: 50, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -228,9 +226,8 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholder="Tbh still figuring this out myself"
               placeholderTextColor='#E5E1E5'
-              defaultValue={text}
               multiline={true}
               editable={false}
       />
@@ -241,7 +238,7 @@ function ForumPost() {
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 80,
+      top: 20,
       alignItems: 'center',
       height: 100
     }}>
@@ -267,7 +264,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              defaultValue={text}
               multiline={true}
               editable={false}
       />
@@ -278,7 +274,7 @@ function ForumPost() {
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 90,
+      top: 30,
       alignItems: 'center',
       height: 100
     }}>
@@ -304,7 +300,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              defaultValue={text}
               multiline={true}
               editable={false}
       />
@@ -315,7 +310,7 @@ function ForumPost() {
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 100,
+      top: 40,
       alignItems: 'center',
       height: 100
     }}>
@@ -341,7 +336,6 @@ function ForumPost() {
               }}
               placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
               placeholderTextColor='#E5E1E5'
-              defaultValue={text}
               multiline={true}
               editable={false}
       />
@@ -420,7 +414,6 @@ function CommunityScreen() {
           }}
           placeholder="Create new post..."
           placeholderTextColor='#E5E1E5'
-          defaultValue={text}
           multiline={true}
         />            
       </View>
