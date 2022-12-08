@@ -21,18 +21,17 @@ function UpdatesHomeScreen() {
     return (
       <SafeAreaView style={styles.container} >
         <Text style={styles.screenText}>Updates Screen</Text>
-
         <Pressable onPress ={() => navigation.navigate('CreateNewPostScreen')}>
           <Ionicons name="add-circle-outline" size={32} color="green" />
         </Pressable>
         <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1120')}>
-          <Ionicons name="add-circle-outline" size={32} color="green" />
+          <Ionicons name="information-circle-outline" size={32} color="green" />
         </Pressable>
           <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
           <Ionicons name="grid-outline" size={32} color="green" />
           </Pressable>
           
-        <Image source={images.updatesFilled}/>
+        
       </SafeAreaView>
     );
   }
@@ -374,6 +373,9 @@ function UpdatesHomeScreen() {
   function MoreInformationScreen1120() {
     const [text, setText] = useState('');
     const navigation = useNavigation();
+
+   
+
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
@@ -1035,9 +1037,43 @@ function UpdatesHomeScreen() {
     );
   }
 
+
+  function Displaydata({ data }) {
+    return (
+      <div>
+        {data.map((alldata) => 
+          <div key={alldata.id}>
+              {alldata.name}
+          </div>
+        )}
+      </div>
+    );
+  }
+  
+  export async function getStaticProps() {
+    const { data } = await supabase.from("PostInformation").select("*");
+    console.log("THIS IS THE DATA: ",  data);
+    return {
+      props: {
+        data: data,
+      },
+    };
+  }
+
   function MoreInformationScreen1128() {
     const [text, setText] = useState('');
     const navigation = useNavigation();
+
+    const getPosts = async () => {
+      try{
+      const { data, error } = await supabase.from('PostInformation').select('*');
+      console.log("supabase getPosts data 11/28", data);
+      console.log("Supabase err", error);
+      } catch(err){
+      console.error(err)
+    }
+  }
+
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
@@ -1201,6 +1237,15 @@ const styles = StyleSheet.create({
     scrollView: {
       flex: 1,
       backgroundColor: '#464646'
+    },
+    updatePicture: {
+      flex: 1,
+      height: 25,
+      width: 500,
+      justifyContent: "flex-start",
+      alignItems: "center",
+      borderRadius: 15,
+      resizeMode: "contain"
     },
     gridJournal: {
       borderWidth: 1,
