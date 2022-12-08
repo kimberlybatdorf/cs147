@@ -57,12 +57,12 @@ import React, { useState } from 'react';
                 <Image style={{marginTop: 20}} source={images.physicalGraph}/>
               </View>
               <View style={{backgroundColor: '#404040', borderRadius: 7, top: 85, paddingBottom: 20, paddingLeft: 2, paddingRight: 2, width: '97%'}}>
-                <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 30, fontWeight: 'bold', alignSelf: 'center'}}>Mental Patterns</Text>
+                <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 20, fontWeight: 'bold', alignSelf: 'center'}}>Mental Patterns</Text>
                 <Text style={{fontSize: 18, color: '#FFFFFF', paddingTop: 10, paddingLeft: 9}}>A summary of your mental wellbeing over the past three months.</Text>
                 <Image style={{marginTop: 20}} source={images.mentalGraph}/>
               </View>
               <View style={{backgroundColor: '#404040', borderRadius: 7, top: 105, paddingBottom: 20, paddingLeft: 2, paddingRight: 2, width: '97%'}}>
-              <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 30, paddingBottom: 10, fontWeight: 'bold', alignSelf: 'center'}}>One Month Ago</Text>
+              <Text style={{fontSize: 32, color: '#FFFFFF', paddingTop: 20, paddingBottom: 10, fontWeight: 'bold', alignSelf: 'center'}}>One Month Ago</Text>
               <Text style={{fontSize: 20, color: '#FFFFFF', paddingTop: 10, alignSelf: 'flex-start', paddingLeft: 20, fontWeight: 'bold'}}>You said...</Text>
               <View style={{alignSelf: 'flex-start', borderWidth: 1, marginTop: 8, borderRadius: 15, width: '90%', padding: 5, backgroundColor: '#313033', borderColor: '#313033', top: 5, left: 20}}>
                 <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>
