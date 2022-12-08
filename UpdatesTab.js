@@ -12,6 +12,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Update from './Update';
 import { supabase } from './Supabase';
+import { clickProps } from 'react-native-web/dist/cjs/modules/forwardedProps';
 
 
 function UpdatesHomeScreen() {
@@ -30,149 +31,13 @@ function UpdatesHomeScreen() {
           <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
           <Ionicons name="grid-outline" size={32} color="green" />
           </Pressable>
-          <Pressable onPress ={() => navigation.navigate('SupabaseSetup')}>
-          <Ionicons name="albums-outline" size={32} color="green" />
-          </Pressable>
+          
         <Image source={images.updatesFilled}/>
       </SafeAreaView>
     );
   }
 
-  const updateData = [
-    {
-      id: '1', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '2', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '3', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '4', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '5', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '6', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '7', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '8', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '9', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '10', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '11', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '12', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '13', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '14', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '15', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '16', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '17', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '18', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-  ];
 
-
-const renderUpdate = ({ item, index }) => (
-  <Update
-  date = {item.date} 
-  journalEntry = {item.journalEntry}
-  imageUrl = {item.imageUrl}
-  />
-
-);
-
-
-
-const UpdatesList = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-    <FlatList 
-    data = {updateData}
-    keyExtractor = {(item) => item.id}
-
-    renderItem={(item) => renderUpdate(item)}
-    />
-  </SafeAreaView>
-  );
-}
 
   function AllUpdatesGrid() {
     const navigation = useNavigation();
@@ -367,36 +232,9 @@ const UpdatesList = () => {
     );
   }
 
-  const SupabaseSetup: () => Node = () => {
-    const [items, setItems] = useState([]);
-    const getItems = async () => {
 
-      let { data: PostInformation, error } = await supabase
-      .from('PostInformation')
-      .select('*')
       
-      return PostInformation
-    }
 
-    useEffect( () => {
-      getItems()
-      .then((postInformation) => {
-        console.log("postinformation", postInformation)
-        setItems(postInformation);
-      })
-
-    }, [])
-    
-    return(
-      <SafeAreaView>
-        <View>
-          <Text>Supabase</Text>
-
-        </View>
-
-      </SafeAreaView>
-    )
-  }
 
   function CreateNewPostScreen() {
     const [text, setText] = useState('');
@@ -413,6 +251,62 @@ const UpdatesList = () => {
     const [checked8, check8] = useState(false);
     const [checked9, check9] = useState(false);
     const [checked10, check10] = useState(false);
+
+    const [journal, setJournal] = React.useState('');
+
+    const [fatigue, setFatigue] = React.useState(false);
+    const [data, setPosts] = React.useState('');
+
+    const getPosts = async () => {
+      try{
+      const { data, error } = await supabase.from('PostInformation').select('*');
+      console.log("supabase getPosts data", data);
+      console.log("Supabase err", error);
+      } catch(err){
+      console.error(err)
+    }
+  }
+
+  const addPost = async () => {
+    try {
+      
+      console.log("fatigue", {checked1})
+      console.log("nausea", {checked2})
+      console.log("dizziness", {checked3})
+      console.log("headache", {checked4})
+      console.log("eyeStrain", {checked5})
+      console.log("happy", {checked6})
+      console.log("stressed", {checked7})
+      console.log("satisfied", {checked8})
+      console.log("isolated", {checked9})
+      console.log("hopeful", {checked10})
+      console.log("journal entry", journal)
+      const { error } = await supabase.from('PostInformation').insert({
+        fatigue: checked1,
+        nausea: checked2,
+        dizziness: checked3,
+        headache: checked4,
+        eyeStrain: checked5,
+        happy: checked6,
+        stressed: checked7,
+        satisfied: checked8,
+        isolated: checked9, 
+        hopeful: checked10,
+        journalWrittenEntry: journal,
+        
+      });
+      console.log("supabase add post function", error);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  React.useEffect(() => {
+    getPosts();
+  }, []);
+
+  
+
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
@@ -431,7 +325,7 @@ const UpdatesList = () => {
             padding: 15,
             justifyContent: 'space-evenly'
         }}>
-          <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check1(true)}} disableBuiltInState={saved} isChecked={checked1}/>
+          <BouncyCheckbox size={60} fillColor='green' onPress={ (isChecked) => {check1(true)}}  disableBuiltInState={saved} isChecked={checked1} />
           <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check2(true)}} disableBuiltInState={saved} isChecked={checked2} />
           <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check3(true)}} disableBuiltInState={saved} isChecked={checked3} />
           <BouncyCheckbox size={60} fillColor='green' onPress={(isChecked) => {check4(true)}} disableBuiltInState={saved} isChecked={checked4} />
@@ -487,17 +381,18 @@ const UpdatesList = () => {
             style={{fontStyle:'italic', borderWidth: 12, height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}
             placeholder="How are you feeling today? In what ways do you need support? What have you accomplished today?"
             placeholderTextColor='#E5E1E5'
-            onChangeText={newText => setText(newText)}
-            defaultValue={text}
+            value={journal}
+            onChangeText={setJournal}
             multiline={true}
             editable={saved ? false : true}
           />
           <Image source={images.micIcon} style={{left: 350, top: -45}}/>
         </View>
-        {/* <TouchableOpacity style={styles.saveButton} onPress={onSavePress}>  */}
-        <Pressable style={styles.saveButton} onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+        <Pressable style={styles.saveButton} onPress={() => {
+          addPost();
+          navigation.navigate('AllUpdatesGrid');
+        }}>
           <Text style={styles.saveText}>Save</Text>
-        {/* </TouchableOpacity> */}
         </Pressable>
       </SafeAreaView>
     );
@@ -1280,7 +1175,6 @@ export default function UpdatesTab(){
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1127" component={MoreInformationScreen1127}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1128" component={MoreInformationScreen1128}/>
         <Stack.Screen options={{headerShown: false}} name="SharePostScreen" component={SharePostScreen}/>
-        <Stack.Screen options={{headerShown: false}} name="SupabaseSetup" component={SupabaseSetup}/>
 
 
 
