@@ -37,141 +37,7 @@ function UpdatesHomeScreen() {
     );
   }
 
-  const updateData = [
-    {
-      id: '1', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '2', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '3', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '4', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '5', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '6', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '7', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '8', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '9', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '10', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '11', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '12', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '13', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '14', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '15', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '16', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '17', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-    {
-      id: '18', 
-      date: '12/05/22',
-      journalEntry: 'I feel less nautious today.',
-      imageUrl: 'https://i.pinimg.com/736x/40/6e/69/406e69fa30c5844972a244f7c2c1528a.jpg',
-    },
-  ];
 
-
-const renderUpdate = ({ item, index }) => (
-  <Update
-  date = {item.date} 
-  journalEntry = {item.journalEntry}
-  imageUrl = {item.imageUrl}
-  />
-
-);
-
-
-
-const UpdatesList = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-    <FlatList 
-    data = {updateData}
-    keyExtractor = {(item) => item.id}
-
-    renderItem={(item) => renderUpdate(item)}
-    />
-  </SafeAreaView>
-  );
-}
 
   function AllUpdatesGrid() {
     const navigation = useNavigation();
@@ -337,52 +203,9 @@ const UpdatesList = () => {
     );
   }
 
-  //const SupabaseSetup: () => Node = () => {
-    //const [items, setItems] = useState([]);
-   
 
-   // const addNewItems = async (postInformation) =>{
-
-     //   const { data, error } = await supabase
-       // .from('PostInformation')
-      //  .insert([
-        //  { journal: journalPost, fatigue: true },
-       // ])
-
-      //  return PostInformation
-  //  }
-    
-  //  const saveItem = (journalPost)=>{
-     // addNewItem(journalPost) 
-   //   .then(()=> {
-     //   getItems()
-       // .then((postInformation)=> {
-   //       setPost(postInformation)
-     //   }
-       // )
-     // })
       
-    
 
-   // useEffect( () => {
-     // getItems()
-    //  .then((postInformation) => {
-    //    console.log("postinformation", postInformation)
-     //   setPost(postInformation);
-    //  })
-
-  //  }, [])
-    
-   
-
-  //const addNewItem = () => {
- //   if(Text.length === 0) 
-   // return;
-
-   // props.saveNewItem(Text);
-
-    
- // }
 
   function CreateNewPostScreen() {
     const [text, setText] = useState('');
@@ -417,11 +240,19 @@ const UpdatesList = () => {
 
   const addPost = async () => {
     try {
-      console.log("journal entry", journal)
+      
       console.log("fatigue", {checked1})
       console.log("nausea", {checked2})
+      console.log("dizziness", {checked3})
+      console.log("headache", {checked4})
+      console.log("eyeStrain", {checked5})
       console.log("happy", {checked6})
-      const { error } = await supabase.from('songs').insert({
+      console.log("stressed", {checked7})
+      console.log("satisfied", {checked8})
+      console.log("isolated", {checked9})
+      console.log("hopeful", {checked10})
+      console.log("journal entry", journal)
+      const { error } = await supabase.from('PostInformation').insert({
         fatigue: checked1,
         nausea: checked2,
         dizziness: checked3,
