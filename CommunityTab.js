@@ -503,7 +503,7 @@ function CommunityScreen() {
               marginTop: 2,
               marginBottom: 2,
             }}>
-              this is preview text.......
+              I'm having a hard time explaining how...
             </Text>
           </View>
         </View>
@@ -516,7 +516,7 @@ function CommunityScreen() {
       width: '97%',
       borderRadius: 7,
       top: 30,
-      height: 130,
+      height: 110,
       alignSelf: 'center'
     }}>
       <Image source={images.yellow}
@@ -535,7 +535,7 @@ function CommunityScreen() {
           alignItems: 'flex-start'
         }}>
           <View style={{
-            backgroundColor: 'green',
+            backgroundColor: '#55AA68',
             borderRadius: 7,
             width: 130
             }}>
@@ -562,12 +562,13 @@ function CommunityScreen() {
             color: 'white',
             fontSize: 20
           }}>
-            how to explain concussion symptoms to friends?
+            Tips on managing migraines?
           </Text>
           <View style={{
             backgroundColor: '#313033',
             top: 10,
-            borderRadius: 7
+            borderRadius: 7,
+            width: 320
           }}>
             <Text style={{
               color: 'white',
@@ -576,7 +577,7 @@ function CommunityScreen() {
               marginTop: 2,
               marginBottom: 2,
             }}>
-              this is preview text.......
+            my head has been killing me these past...
             </Text>
           </View>
         </View>
@@ -634,7 +635,7 @@ function CommunityScreen() {
             color: 'white',
             fontSize: 20
           }}>
-            how to explain concussion symptoms to friends?
+            Feeling disappointed in my work performance
           </Text>
           <View style={{
             backgroundColor: '#313033',
@@ -647,8 +648,9 @@ function CommunityScreen() {
               marginLeft: 6,
               marginTop: 2,
               marginBottom: 2,
+              width: 350
             }}>
-              this is preview text.......
+              It's super hard to stay productive for m...
             </Text>
           </View>
         </View>
@@ -679,7 +681,7 @@ function CommunityScreen() {
           alignItems: 'flex-start'
         }}>
           <View style={{
-            backgroundColor: 'green',
+            backgroundColor: '#86CC9B',
             borderRadius: 7,
             width: 130
             }}>
@@ -706,7 +708,7 @@ function CommunityScreen() {
             color: 'white',
             fontSize: 20
           }}>
-            how to explain concussion symptoms to friends?
+            amazing new study on concussion recovery
           </Text>
           <View style={{
             backgroundColor: '#313033',
@@ -719,8 +721,9 @@ function CommunityScreen() {
               marginLeft: 6,
               marginTop: 2,
               marginBottom: 2,
+              width: 350
             }}>
-              this is preview text.......
+              Stanford University just published this st...
             </Text>
           </View>
         </View>
@@ -732,78 +735,6 @@ function CommunityScreen() {
       width: '97%',
       borderRadius: 7,
       top: 75,
-      height: 130,
-      alignSelf: 'center'
-    }}>
-      <Image source={images.pink}
-        style={{
-          left: 15,
-          // top: 10,
-          alignSelf: 'center'
-        }}
-      />
-      <View style={{
-        left: 30,
-        top: 10
-      }}>
-        <View style={{
-          flexDirection: 'row',
-          alignItems: 'flex-start'
-        }}>
-          <View style={{
-            backgroundColor: 'green',
-            borderRadius: 7,
-            width: 130
-            }}>
-            <Text style={{
-              color: 'white',
-              alignSelf: 'center',
-              fontSize: 16
-              }}>
-              Physical Health
-            </Text>
-          </View>
-          <Image 
-            source={images.smallSpeaker}
-            style={{
-              top: -6,
-              left: 4
-            }}
-          />
-        </View>
-        <View style={{
-          width: '90%'
-        }}>
-          <Text style={{
-            color: 'white',
-            fontSize: 20
-          }}>
-            how to explain concussion symptoms to friends?
-          </Text>
-          <View style={{
-            backgroundColor: '#313033',
-            top: 10,
-            borderRadius: 7
-          }}>
-            <Text style={{
-              color: 'white',
-              fontSize: 16,
-              marginLeft: 6,
-              marginTop: 2,
-              marginBottom: 2,
-            }}>
-              this is preview text.......
-            </Text>
-          </View>
-        </View>
-      </View>
-    </View>
-    <View style={{
-      backgroundColor: '#404040',
-      flexDirection: 'row',
-      width: '97%',
-      borderRadius: 7,
-      top: 90,
       height: 130,
       alignSelf: 'center'
     }}>
@@ -823,7 +754,7 @@ function CommunityScreen() {
           alignItems: 'flex-start'
         }}>
           <View style={{
-            backgroundColor: 'green',
+            backgroundColor: '#55AA68',
             borderRadius: 7,
             width: 130
             }}>
@@ -850,7 +781,7 @@ function CommunityScreen() {
             color: 'white',
             fontSize: 20
           }}>
-            how to explain concussion symptoms to friends?
+            Keeping energy levels up while recovering
           </Text>
           <View style={{
             backgroundColor: '#313033',
@@ -864,7 +795,7 @@ function CommunityScreen() {
               marginTop: 2,
               marginBottom: 2,
             }}>
-              this is preview text.......
+              How do y'all maintain energy throughout...
             </Text>
           </View>
         </View>
