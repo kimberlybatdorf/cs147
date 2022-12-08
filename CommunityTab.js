@@ -168,7 +168,7 @@ function ForumPost() {
       alignSelf: 'center',
       borderRadius: 7,
       alignItems: 'center',
-      height: 200
+      height: 185
     }}>
       <Image source={images.yellow} style={{
         left: 15
@@ -176,7 +176,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 180, 
+                height: 165, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -190,7 +190,7 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="I really feel this. Honestly I trust try to communicate as openly as possible and reassure my friends that I'm not actually flaking half the time and would love to hang out but simply need a lot of rest at the moment."
+              placeholder="I really feel this. Honestly I just try to communicate as openly as possible and reassure my friends that I'm not actually flaking half the time and would love to hang out but simply need a lot of rest at the moment."
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -240,7 +240,7 @@ function ForumPost() {
       borderRadius: 7,
       top: 20,
       alignItems: 'center',
-      height: 100
+      height: 245
     }}>
       <Image source={images.pink} style={{
         left: 15
@@ -248,7 +248,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 80, 
+                height: 225, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -262,7 +262,7 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholder="i think just being communicative about your symptoms and how you're feeling on a regular basis is helpful. i found that it was easy for others to assume that i was feeling okay, but when i actually let them know how i'm feeling they began to understand the weight of concussions"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -276,7 +276,7 @@ function ForumPost() {
       borderRadius: 7,
       top: 30,
       alignItems: 'center',
-      height: 100
+      height: 70
     }}>
       <Image source={images.red} style={{
         left: 15
@@ -284,7 +284,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 80, 
+                height: 50, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -298,7 +298,7 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholder="replying to come back to this later"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -312,7 +312,7 @@ function ForumPost() {
       borderRadius: 7,
       top: 40,
       alignItems: 'center',
-      height: 100
+      height: 230
     }}>
       <Image source={images.profileIcon} style={{
         left: 15
@@ -320,7 +320,7 @@ function ForumPost() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 80, 
+                height: 210, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -334,7 +334,7 @@ function ForumPost() {
                 top: -7
                 
               }}
-              placeholder="THIS IS A COMMENT.ASHKDFAJSDFKASDFJKSDLJK"
+              placeholder="I feel like it helps to mention that concussion recovery is a process and not something that just happens overnight. I feel like a lot of my friends and family didn't even realize how long concussions last so it really came down to teaching them more about concussions"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
