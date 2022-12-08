@@ -22,7 +22,7 @@ function ForumPost() {
             top: -7
           }}
         />
-        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 10}}>Recovery Grow</Text>
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
         <Image 
           source={images.profileIcon}
           style={{
@@ -362,7 +362,7 @@ function ForumPost1() {
             top: -7
           }}
         />
-        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 10}}>Recovery Grow</Text>
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
         <Image 
           source={images.profileIcon}
           style={{
@@ -704,7 +704,7 @@ function CommunityScreen() {
             top: -7
           }}
         />
-        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 10}}>Recovery Grow</Text>
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
         <Image 
           source={images.profileIcon}
           style={{

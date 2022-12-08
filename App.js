@@ -31,7 +31,7 @@ import React, { useState } from 'react';
           source={images.icon}
           style={{
             top: -7,
-            left: -10
+            left: -15
           }}
         />
         <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: -10}}>Recovery Grow</Text>
@@ -39,7 +39,7 @@ import React, { useState } from 'react';
           source={images.profileIcon}
           style={{
             top: -5,
-            left: -3
+            left: -1
           }}
         />
       </View>
