@@ -17,7 +17,12 @@ const images = {
     mentalGraph: require('./graph2.png'),
     profileIcon: require('./profileicon.png'),
     smallSpeaker: require('./volume_up.png'),
-    icon: require('./icon.png')
+    icon: require('./icon.png'),
+    orange: require('./o.png'),
+    pink: require('./p.png'),
+    yellow: require('./y.png'),
+    blue: require('./b.png'),
+    red: require('./r.png')
   };
   
   export default images;

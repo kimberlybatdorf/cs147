@@ -46,7 +46,7 @@ function ForumPost() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.orange}
         style={{
           left: 15,
           // top: 10,
@@ -171,7 +171,7 @@ function ForumPost() {
       alignItems: 'center',
       height: 100
     }}>
-      <Image source={images.profileIcon} style={{
+      <Image source={images.yellow} style={{
         left: 15
       }}/>
       <TextInput
@@ -208,7 +208,7 @@ function ForumPost() {
       alignItems: 'center',
       height: 100
     }}>
-      <Image source={images.profileIcon} style={{
+      <Image source={images.blue} style={{
         left: 15
       }}/>
       <TextInput
@@ -245,7 +245,7 @@ function ForumPost() {
       alignItems: 'center',
       height: 100
     }}>
-      <Image source={images.profileIcon} style={{
+      <Image source={images.pink} style={{
         left: 15
       }}/>
       <TextInput
@@ -282,7 +282,7 @@ function ForumPost() {
       alignItems: 'center',
       height: 100
     }}>
-      <Image source={images.profileIcon} style={{
+      <Image source={images.red} style={{
         left: 15
       }}/>
       <TextInput
@@ -452,7 +452,7 @@ function CommunityScreen() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.pink}
         style={{
           left: 15,
           // top: 10,
@@ -526,7 +526,7 @@ function CommunityScreen() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.yellow}
         style={{
           left: 15,
           // top: 10,
@@ -598,7 +598,7 @@ function CommunityScreen() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.orange}
         style={{
           left: 15,
           // top: 10,
@@ -742,7 +742,7 @@ function CommunityScreen() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.pink}
         style={{
           left: 15,
           // top: 10,
@@ -814,7 +814,7 @@ function CommunityScreen() {
       height: 130,
       alignSelf: 'center'
     }}>
-      <Image source={images.profileIcon}
+      <Image source={images.red}
         style={{
           left: 15,
           // top: 10,
