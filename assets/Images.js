@@ -22,7 +22,8 @@ const images = {
     pink: require('./p.png'),
     yellow: require('./y.png'),
     blue: require('./b.png'),
-    red: require('./r.png')
+    red: require('./r.png'),
+    plus: require('./plus.png')
   };
   
   export default images;

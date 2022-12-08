@@ -355,6 +355,14 @@ const UpdatesList = () => {
         </Col>        
       </Grid>
       </ScrollView>
+      <Pressable onPress ={() => navigation.navigate('CreateNewPostScreen')} style={{
+        alignSelf: 'flex-end',
+        left: -2,
+        top: -30
+      }}>
+          {/* <Ionicons name="add-circle-outline" size={32} color="green" /> */}
+          <Image source={images.plus}/>
+      </Pressable>
      </SafeAreaView>
     );
   }
@@ -1329,10 +1337,9 @@ const styles = StyleSheet.create({
       borderRadius: 15, 
     },
     scrollView: {
-      flex: 1,
       backgroundColor: '#464646',
       width:'90%',
-      alignSelf: 'center'
+      alignSelf: 'center',
     },
     gridJournal: {
       borderWidth: 1,
