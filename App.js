@@ -117,27 +117,26 @@ export default function App() {
     return(
         <NavigationContainer>
             <Tab.Navigator
-            
-            screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused }) => {
-            let iconSource;
-
-            if (route.name === 'Updates') {
-              iconSource = focused ? images.updatesFilled : images.updatesOutline;
-            } else if (route.name === 'Analytics') {
-              iconSource = focused ? images.analyticsFilled : images.analyticsOutline;
-            } else if (route.name === 'Community') {
-              iconSource = focused
-                ? images.communityFilled
-                : images.communityOutline;
-            }
-
-            return <Image source={iconSource} style= {{height: 64, width: 64}}  />;
-          }
-        })}>
-            
-            
-
+              tabBarOptions={{
+                activeBackgroundColor: '#616161',
+                inactiveBackgroundColor: '#616161'
+              }}
+              screenOptions={({ route }) => ({
+              tabBarIcon: ({ focused }) => {
+                let iconSource;
+                if (route.name === 'Updates') {
+                  iconSource = focused ? images.updatesFilled : images.updatesOutline;
+                } else if (route.name === 'Analytics') {
+                  iconSource = focused ? images.analyticsFilled : images.analyticsOutline;
+                } else if (route.name === 'Community') {
+                  iconSource = focused
+                    ? images.communityFilled
+                    : images.communityOutline;
+                }
+                // return <Image source={iconSource} style= {{height: 64, width: 64}}  />;
+                return <Image source={iconSource} />;
+              }
+            })}>
         <Tab.Screen options={{headerShown: false}} name="Updates" component={UpdatesTab} />
         <Tab.Screen options={{headerShown: false}} name="Analytics" component={AnalyticsScreen} />
         <Tab.Screen options={{headerShown: false}} name="Community" component={CommunityTab} />
