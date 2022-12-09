@@ -310,11 +310,18 @@ function UpdatesHomeScreen() {
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
         <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 12</Text>
-          <Image style={{marginTop: 3, left: 100, top: -5}} source={images.unlockedIcon}/>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 12</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 20}}>
         <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Symptoms</Text>
         <View  

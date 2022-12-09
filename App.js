@@ -34,7 +34,7 @@ import React, { useState } from 'react';
             left: -15
           }}
         />
-        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: -10}}>Recovery Grow</Text>
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: -9}}>Recovery Grow</Text>
         <Image 
           source={images.profileIcon}
           style={{

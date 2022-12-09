@@ -1043,7 +1043,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: '#86CC9B',
-            borderRadius: 5,
+            borderRadius: 5,    
             width: 130
             }}>
             <Text style={{
