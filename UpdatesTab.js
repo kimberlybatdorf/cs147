@@ -1240,7 +1240,7 @@ export default function UpdatesTab(){
     return(
         
       <Stack.Navigator>
-        <Stack.Screen options={{headerShown: false}} name="UpdatesHomeScreen" component={UpdatesHomeScreen}/>
+        {/* <Stack.Screen options={{headerShown: false}} name="UpdatesHomeScreen" component={UpdatesHomeScreen}/> */}
         <Stack.Screen options={{headerShown: false}} name="CreateNewPostScreen" component={CreateNewPostScreen}/>
         <Stack.Screen options={{headerShown: false}} name="AllUpdatesGrid" component={AllUpdatesGrid}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1120" component={MoreInformationScreen1120}/>
