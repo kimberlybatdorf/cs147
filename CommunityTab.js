@@ -63,7 +63,7 @@ function ForumPost() {
         }}>
           <View style={{
             backgroundColor: 'green',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -412,7 +412,7 @@ function ForumPost1() {
         }}>
           <View style={{
             backgroundColor: 'green',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -818,7 +818,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: 'green',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -893,7 +893,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: '#55AA68',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -968,7 +968,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: 'green',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -1043,7 +1043,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: '#86CC9B',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
@@ -1118,7 +1118,7 @@ function CommunityScreen() {
         }}>
           <View style={{
             backgroundColor: '#55AA68',
-            borderRadius: 7,
+            borderRadius: 5,
             width: 130
             }}>
             <Text style={{
