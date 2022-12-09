@@ -125,7 +125,8 @@ export default function App() {
             <Tab.Navigator
               tabBarOptions={{
                 activeBackgroundColor: '#616161',
-                inactiveBackgroundColor: '#616161'
+                inactiveBackgroundColor: '#616161',
+                labelStyle: {color: 'white'}
               }}
               screenOptions={({ route }) => ({
               tabBarIcon: ({ focused }) => {
@@ -139,7 +140,6 @@ export default function App() {
                     ? images.communityFilled
                     : images.communityOutline;
                 }
-                // return <Image source={iconSource} style= {{height: 64, width: 64}}  />;
                 return <Image source={iconSource} />;
               }
             })}>
