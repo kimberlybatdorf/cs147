@@ -98,22 +98,8 @@ function UpdatesHomeScreen() {
           </View>
           <View style={{height: 200}}>
           <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1121')}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1119')}>
               <Text style={styles.gridText}>11/19</Text>
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1124')}>
-              <Text style={styles.gridText}>11/16</Text>
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1127')}>
-              <Text style={styles.gridText}>11/13</Text>
             </Pressable>
           </Row>
           </View>
@@ -143,23 +129,9 @@ function UpdatesHomeScreen() {
           </View>
           <View style={{height: 200}}>
           <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1120')}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1118')}>
               <Text style={styles.gridText}>11/18</Text>
 
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1123')}>
-              <Text style={styles.gridText}>11/15</Text>
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1126')}>
-              <Text style={styles.gridText}>11/12</Text>
             </Pressable>
           </Row>
           </View>
@@ -195,24 +167,9 @@ function UpdatesHomeScreen() {
           </View>
           <View style={{height: 200}}>
           <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1123')}>
+            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1117')}>
               <Text style={styles.gridText}>11/17</Text>
 
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1125')}>
-              <Text style={styles.gridText}>11/14</Text>
-              
-            </Pressable>
-          </Row>
-          </View>
-          <View style={{height: 200}}>
-          <Row style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1128')}>
-              <Text style={styles.gridText}>11/11</Text>
             </Pressable>
           </Row>
           </View>
@@ -400,6 +357,281 @@ function UpdatesHomeScreen() {
         }}>
           <Text style={styles.saveText}>Save</Text>
         </Pressable>
+      </SafeAreaView>
+    );
+  }
+
+  function MoreInformationScreen1117() {
+    const [text, setText] = useState('');
+    const navigation = useNavigation();
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
+          </Pressable>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 17</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
+        </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
+        <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
+          <View style={{flexDirection: "row"}}>
+            <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
+            <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
+          </View>
+          <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>Feeling a bit tired today, but better than yesterday. Didn't have trouble looking at the computer but didn't feel up for socializing</Text>
+          </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 15,
+            justifyContent: 'space-evenly'
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -5}}>Fatigue</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 5}}>Nausea</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 10}}>Dizziness</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 7}}>Headache</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 3}}>Eye Strain</Text>
+        </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 50, width: '96%'}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 20
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 0}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -4}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -3}}>Hopeful</Text>
+        </View>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+
+  function MoreInformationScreen1118() {
+    const [text, setText] = useState('');
+    const navigation = useNavigation();
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
+          </Pressable>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 18</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
+        </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
+        <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
+          <View style={{flexDirection: "row"}}>
+            <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
+            <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
+          </View>
+          <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>i honestly feel like i haven't been the best at making time for myself to rest... feeling very tired and should probably be making more time for myself</Text>
+          </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 15,
+            justifyContent: 'space-evenly'
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -5}}>Fatigue</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 5}}>Nausea</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 10}}>Dizziness</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 7}}>Headache</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 3}}>Eye Strain</Text>
+        </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 50, width: '96%'}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 20
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 0}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -4}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -3}}>Hopeful</Text>
+        </View>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+
+  function MoreInformationScreen1119() {
+    const [text, setText] = useState('');
+    const navigation = useNavigation();
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
+          </Pressable>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 19</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
+        </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
+        <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
+          <View style={{flexDirection: "row"}}>
+            <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
+            <Image style={{marginTop: 3, left: 8}} source={images.speakerIcon}/>
+          </View>
+          <View style={{borderWidth: 1, marginLeft: 18, marginTop: 8, borderRadius: 15,width: '90%',padding: 5,backgroundColor: '#313033', borderColor: '#313033'}}>
+            <Text style={{height: 180, marginLeft: 15, marginRight: 15, marginTop: 15, borderRadius: 15, borderColor: '#313033', backgroundColor: '#313033', color: '#FFFFFF', fontSize: 18}}>today was a good day!!! felt productive and also got to spend meaningful time with friends</Text>
+          </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 30}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 25}}>Symptoms</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 15,
+            justifyContent: 'space-evenly'
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked='true' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -5}}>Fatigue</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 5}}>Nausea</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 10}}>Dizziness</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 7}}>Headache</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 3}}>Eye Strain</Text>
+        </View>
+        </View>
+        <View style={{backgroundColor: '#404040', alignSelf: 'center', borderRadius: 7, paddingBottom: 15, top: 50, width: '96%'}}>
+        <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 20}}>Mood</Text>
+        <View  
+          style={{
+            flexDirection: "row",
+            height: 100,
+            padding: 20
+        }}>
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+          <BouncyCheckbox size={60} fillColor='green' isChecked disableBuiltInState />
+        </View>
+        <View  
+          style={{
+            flexDirection: "row",
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            paddingLeft: 30,
+            paddingRight: 30
+        }}>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 2}}>Happy</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF'}}>Stressed</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: 0}}>Satisfied</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -4}}>Isolated</Text>
+          <Text style={{fontSize: 12, color: '#FFFFFF', left: -3}}>Hopeful</Text>
+        </View>
+        </View>
       </SafeAreaView>
     );
   }
@@ -1243,6 +1475,9 @@ export default function UpdatesTab(){
         {/* <Stack.Screen options={{headerShown: false}} name="UpdatesHomeScreen" component={UpdatesHomeScreen}/> */}
         <Stack.Screen options={{headerShown: false}} name="CreateNewPostScreen" component={CreateNewPostScreen}/>
         <Stack.Screen options={{headerShown: false}} name="AllUpdatesGrid" component={AllUpdatesGrid}/>
+        <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1117" component={MoreInformationScreen1117}/>
+        <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1118" component={MoreInformationScreen1118}/>
+        <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1119" component={MoreInformationScreen1119}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1120" component={MoreInformationScreen1120}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1121" component={MoreInformationScreen1121}/>
         <Stack.Screen options={{headerShown: false}} name="MoreInformationScreen1122" component={MoreInformationScreen1122}/>
