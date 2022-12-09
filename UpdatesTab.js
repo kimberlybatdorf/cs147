@@ -412,11 +412,19 @@ function UpdatesHomeScreen() {
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 20</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 20</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -494,12 +502,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 21</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 21</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -577,12 +593,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 22</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 22</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -661,11 +685,19 @@ function UpdatesHomeScreen() {
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 23</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 23</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -743,12 +775,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 24</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 24</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -826,12 +866,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>  
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 25</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 25</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -909,12 +957,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 26</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 26</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -993,11 +1049,19 @@ function UpdatesHomeScreen() {
     return (
       <SafeAreaView style={styles.container}>
         <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 27</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 27</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
@@ -1075,12 +1139,20 @@ function UpdatesHomeScreen() {
     const navigation = useNavigation();
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
-          <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
-            <Image style={{left: 20}} source={images.backArrow}/>
+       <View style={{flexDirection: "row", alignContent: 'center', alignItems: 'center'}}>
+        <Pressable onPress ={() => navigation.navigate('AllUpdatesGrid')}>
+            <Image style={{left: 20, top: -2}} source={images.backArrow}/>
           </Pressable>
-          <Text style={{fontSize: 42, color: '#FFFFFF', left: 70}}>November 28</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', color: '#FFFFFF', left: 105, top: -3}}>November 28</Text>
+          <Image style={{marginTop: 3, left: 170, top: -6}} source={images.unlockedIcon}/>
         </View>
+        <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 5
+      }}/>
         <View style={{backgroundColor: '#404040', borderRadius: 7, width: '96%', alignSelf: 'center', height: 290, top: 10}}>
           <View style={{flexDirection: "row"}}>
             <Text style={{fontSize: 32, color: '#FFFFFF', paddingLeft: 20, paddingTop: 10}}>Journal</Text>
