@@ -156,7 +156,7 @@ function ForumPost() {
       />
     </View>
     <Pressable style={styles.saveButton1}>
-        <Text style={styles.saveText}>Post</Text>
+        <Text style={styles.saveText}>Reply</Text>
     </Pressable>
     </View>
     {/* <Pressable style={styles.saveButton1}>
@@ -1203,7 +1203,7 @@ const styles = StyleSheet.create({
       width: '20%',
       alignSelf: 'flex-end',
       height: 20,
-      left: 18
+      left: 18,
     },
     saveButton1:{
       marginRight:40,
@@ -1215,11 +1215,12 @@ const styles = StyleSheet.create({
       width: '20%',
       alignSelf: 'flex-end',
       height: 20,
-      left: 10
+      left: 10,
     },
     saveText:{
       color:'#ffffff',
       textAlign:'center',
-      fontSize: 13
+      fontSize: 13,
+      fontWeight: 'bold'
   },
 });

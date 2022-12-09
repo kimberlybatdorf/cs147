@@ -1255,6 +1255,7 @@ const styles = StyleSheet.create({
     saveText:{
         color:'#ffffff',
         textAlign:'center',
+        fontWeight: 'bold'
     },
     plaeceHolderText: {
       fontStyle:'italic', 
