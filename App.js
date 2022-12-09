@@ -79,11 +79,11 @@ import React, { useState } from 'react';
                 <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
               </View>
               <View style={{flexDirection: 'row'}}>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: -55}}>Fatigue</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: -20}}>Nausea</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: 10}}>Dizziness</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: 30}}>Headache</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: 48}}>Eye Strain</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 22}}>Fatigue</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 53}}>Nausea</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 80}}>Dizziness</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 100}}>Headache</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 120}}>Eye Strain</Text>
               </View>
               <Text style={{fontSize: 20, color: '#FFFFFF', paddingTop: 25, alignSelf: 'flex-start', paddingLeft: 20}}>Mood</Text>
               <View style={{flexDirection: "row",height: 100, padding: 15, justifyContent: 'space-evenly'}}>
@@ -94,11 +94,11 @@ import React, { useState } from 'react';
                 <BouncyCheckbox size={60} fillColor='green' disableBuiltInState />
               </View>
               <View style={{flexDirection: 'row'}}>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: -67}}>Happy</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: -33}}>Stressed</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: -5}}>Satisfied</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: 23}}>Isolated</Text>
-                <Text style={{fontSize: 12, color: '#FFFFFF', left: 53}}>Hopeful</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 23}}>Happy</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 55}}>Stressed</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 80}}>Satisfied</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 105}}>Isolated</Text>
+                <Text style={{fontSize: 12, color: '#FFFFFF', left: 137}}>Hopeful</Text>
               </View>
             </View>
             </View>
