@@ -117,14 +117,16 @@ function ForumPost() {
         top: 30
       }}/>
     <View style={{
+      backgroundColor: '#404040', 
+      top: 40
+    }}>
+    <View style={{
       flexDirection: 'row',
       width: '97%',
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 40,
       alignItems: 'center',
-      height: 80
     }}>
       <Image source={images.profileIcon} style={{
         left: 15
@@ -153,6 +155,13 @@ function ForumPost() {
               multiline={true}
       />
     </View>
+    <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+    </Pressable>
+    </View>
+    {/* <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+    </Pressable> */}
     <View style={{
         borderColor: '#616161',
         borderBottomWidth: 1,
@@ -492,6 +501,9 @@ function ForumPost1() {
               defaultValue={text}
               multiline={true}
       />
+      <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+      </Pressable>
     </View>
     <View style={{
         borderColor: '#616161',
@@ -765,6 +777,9 @@ function CommunityScreen() {
         }}
         source={images.micIcon}
       />
+      <Pressable style={styles.saveButton}>
+        <Text style={styles.saveText}>Post</Text>
+      </Pressable>
       <View style={{
         borderColor: '#616161',
         borderBottomWidth: 1,
@@ -1176,5 +1191,35 @@ const styles = StyleSheet.create({
       // alignItems: "flex-start",
       flex: 1,
       backgroundColor: '#464646'
-    }
+    },
+    saveButton:{
+      marginRight:40,
+      marginLeft:40,
+      paddingTop:1,
+      // paddingBottom:10,
+      backgroundColor:'green',
+      borderRadius:15,
+      top: -20,
+      width: '20%',
+      alignSelf: 'flex-end',
+      height: 20,
+      left: 18
+    },
+    saveButton1:{
+      marginRight:40,
+      marginLeft:40,
+      paddingTop:1,
+      // paddingBottom:10,
+      backgroundColor:'green',
+      borderRadius:15,
+      width: '20%',
+      alignSelf: 'flex-end',
+      height: 20,
+      left: 10
+    },
+    saveText:{
+      color:'#ffffff',
+      textAlign:'center',
+      fontSize: 13
+  },
 });
