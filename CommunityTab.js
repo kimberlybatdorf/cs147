@@ -46,7 +46,7 @@ function ForumPost() {
       height: 170,
       alignSelf: 'center'
     }}>
-      <Image source={images.orange}
+      <Image source={images.pink}
         style={{
           left: 15,
           // top: 10,
@@ -392,10 +392,10 @@ function ForumPost1() {
       width: '97%',
       borderRadius: 7,
       top: 15,
-      height: 170,
+      height: 150,
       alignSelf: 'center'
     }}>
-      <Image source={images.orange}
+      <Image source={images.yellow}
         style={{
           left: 15,
           // top: 10,
@@ -438,7 +438,7 @@ function ForumPost1() {
             color: 'white',
             fontSize: 20
           }}>
-            how to explain concussion symptoms to friends?
+            Tips on managing migraines?
           </Text>
           <View style={{
             backgroundColor: '#313033',
@@ -452,7 +452,7 @@ function ForumPost1() {
               marginTop: 2,
               marginBottom: 2,
             }}>
-              I'm having a hard time explaining how difficult recovering from a concussion is... does anyone else feel this way?
+              my head has been killing me these past few days and idk what to do about it at this point :(
             </Text>
           </View>
         </View>
@@ -520,15 +520,15 @@ function ForumPost1() {
       alignSelf: 'center',
       borderRadius: 7,
       alignItems: 'center',
-      height: 185
+      height: 92
     }}>
-      <Image source={images.yellow} style={{
+      <Image source={images.blue} style={{
         left: 15
       }}/>
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 165, 
+                height: 72, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -542,7 +542,7 @@ function ForumPost1() {
                 top: -7
                 
               }}
-              placeholder="I really feel this. Honestly I just try to communicate as openly as possible and reassure my friends that I'm not actually flaking half the time and would love to hang out but simply need a lot of rest at the moment."
+              placeholder="For me it really helps to find a quiet dark room until the pain goes away"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -556,15 +556,15 @@ function ForumPost1() {
       borderRadius: 7,
       top: 10,
       alignItems: 'center',
-      height: 70
+      height: 115
     }}>
-      <Image source={images.blue} style={{
+      <Image source={images.pink} style={{
         left: 15
       }}/>
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 50, 
+                height: 95, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -578,7 +578,7 @@ function ForumPost1() {
                 top: -7
                 
               }}
-              placeholder="Tbh still figuring this out myself"
+              placeholder="Okay this might sound weird but it  actually helps to drink a little bit of coffee"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -592,15 +592,15 @@ function ForumPost1() {
       borderRadius: 7,
       top: 20,
       alignItems: 'center',
-      height: 245
+      height: 95
     }}>
-      <Image source={images.pink} style={{
+      <Image source={images.orange} style={{
         left: 15
       }}/>
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 225, 
+                height: 75, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -614,29 +614,149 @@ function ForumPost1() {
                 top: -7
                 
               }}
-              placeholder="i think just being communicative about your symptoms and how you're feeling on a regular basis is helpful. i found that it was easy for others to assume that i was feeling okay, but when i actually let them know how i'm feeling they began to understand the weight of concussions"
+              placeholder="Try putting a cold towel in your head! Helps every time :)"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
       />
     </View>
+    </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+function ForumPost2() {
+  const [text, setText] = useState(''); 
+  return (
+    <SafeAreaView style={styles.container}>
+            <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between"
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            left: 6,
+            top: -7
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: 20
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
+      <View style={{
+      backgroundColor: '#404040',
+      flexDirection: 'row',
+      width: '97%',
+      borderRadius: 7,
+      top: 15,
+      height: 190,
+      alignSelf: 'center'
+    }}>
+      <Image source={images.orange}
+        style={{
+          left: 15,
+          // top: 10,
+          alignSelf: 'center'
+        }}
+      />
+      <View style={{
+        left: 30,
+        top: 10
+      }}>
+        <View style={{
+          flexDirection: 'row',
+          alignItems: 'flex-start'
+        }}>
+          <View style={{
+            backgroundColor: 'green',
+            borderRadius: 5,
+            width: 130
+            }}>
+            <Text style={{
+              color: 'white',
+              alignSelf: 'center',
+              fontSize: 16
+              }}>
+              Mental Health
+            </Text>
+          </View>
+          <Image 
+            source={images.smallSpeaker}
+            style={{
+              top: -6,
+              left: 4
+            }}
+          />
+        </View>
+        <View style={{
+          width: '90%'
+        }}>
+          <Text style={{
+            color: 'white',
+            fontSize: 20
+          }}>
+            Feeling disappointed in my work performance
+          </Text>
+          <View style={{
+            backgroundColor: '#313033',
+            top: 10,
+            borderRadius: 7
+          }}>
+            <Text style={{
+              color: 'white',
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
+              marginRight: 2
+            }}>
+              It's super hard to stay productive for me and I find it hard to forgive myself for not being able to contribute to my team as much as I have been able to in the past
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 30
+      }}/>
+    <View style={{
+      backgroundColor: '#404040', 
+      top: 40
+    }}>
     <View style={{
       flexDirection: 'row',
       width: '97%',
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 30,
       alignItems: 'center',
-      height: 70
     }}>
-      <Image source={images.red} style={{
+      <Image source={images.profileIcon} style={{
         left: 15
       }}/>
       <TextInput
               style={{
+                fontStyle:'italic', 
                 borderWidth: 12, 
-                height: 50, 
+                height: 60, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -648,23 +768,37 @@ function ForumPost1() {
                 width: '77%',
                 left: 15,
                 top: -7
-                
               }}
-              placeholder="replying to come back to this later"
+              placeholder="Add a reply..."
               placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
               multiline={true}
-              editable={false}
       />
     </View>
+    <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Reply</Text>
+    </Pressable>
+    </View>
+    {/* <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+    </Pressable> */}
     <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center',
+        top: 50
+      }}/>
+      <ScrollView style={{top: 60}}>
+      <View style={{
       flexDirection: 'row',
       width: '97%',
       backgroundColor: '#404040',
       alignSelf: 'center',
       borderRadius: 7,
-      top: 40,
       alignItems: 'center',
-      height: 230
+      height: 135
     }}>
       <Image source={images.profileIcon} style={{
         left: 15
@@ -672,7 +806,7 @@ function ForumPost1() {
       <TextInput
               style={{
                 borderWidth: 12, 
-                height: 210, 
+                height: 115, 
                 marginLeft: 15,
                 marginRight: 15, 
                 marginTop: 15, 
@@ -686,7 +820,528 @@ function ForumPost1() {
                 top: -7
                 
               }}
-              placeholder="I feel like it helps to mention that concussion recovery is a process and not something that just happens overnight. I feel like a lot of my friends and family didn't even realize how long concussions last so it really came down to teaching them more about concussions"
+              placeholder="Please take things one step at a time. Sometimes your body prevents you from completing work cause it literally needs rest"
+              placeholderTextColor='#E5E1E5'
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 10,
+      alignItems: 'center',
+      height: 135
+    }}>
+      <Image source={images.blue} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 115, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="Maybe talk to your boss about your injury? If you have a good relationship maybe they’ll lighten your workload"
+              placeholderTextColor='#E5E1E5'
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 20,
+      alignItems: 'center',
+      height: 135
+    }}>
+      <Image source={images.red} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 115, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="I usually perform better when I’m in a comfortable setting. So for me that means avoiding direct lighting and harsh sounds"
+              placeholderTextColor='#E5E1E5'
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+function ForumPost3() {
+  const [text, setText] = useState(''); 
+  return (
+    <SafeAreaView style={styles.container}>
+            <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between"
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            left: 6,
+            top: -7
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: 20
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
+      <View style={{
+      backgroundColor: '#404040',
+      flexDirection: 'row',
+      width: '97%',
+      borderRadius: 7,
+      top: 15,
+      height: 190,
+      alignSelf: 'center'
+    }}>
+      <Image source={images.profileIcon}
+        style={{
+          left: 15,
+          // top: 10,
+          alignSelf: 'center'
+        }}
+      />
+      <View style={{
+        left: 30,
+        top: 10
+      }}>
+        <View style={{
+          flexDirection: 'row',
+          alignItems: 'flex-start'
+        }}>
+          <View style={{
+            backgroundColor: 'green',
+            borderRadius: 5,
+            width: 130
+            }}>
+            <Text style={{
+              color: 'white',
+              alignSelf: 'center',
+              fontSize: 16
+              }}>
+              Mental Health
+            </Text>
+          </View>
+          <Image 
+            source={images.smallSpeaker}
+            style={{
+              top: -6,
+              left: 4
+            }}
+          />
+        </View>
+        <View style={{
+          width: '90%'
+        }}>
+          <Text style={{
+            color: 'white',
+            fontSize: 20
+          }}>
+            amazing new study on concussion recovery
+          </Text>
+          <View style={{
+            backgroundColor: '#313033',
+            top: 10,
+            borderRadius: 7
+          }}>
+            <Text style={{
+              color: 'white',
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
+              marginRight: 2
+            }}>
+              Stanford University just published this study analyzing the effects of concussions and recovery rates in children - very interesting read!
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 30
+      }}/>
+    <View style={{
+      backgroundColor: '#404040', 
+      top: 40
+    }}>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      alignItems: 'center',
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                fontStyle:'italic', 
+                borderWidth: 12, 
+                height: 60, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+              }}
+              placeholder="Add a reply..."
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+      />
+    </View>
+    <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Reply</Text>
+    </Pressable>
+    </View>
+    {/* <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+    </Pressable> */}
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center',
+        top: 50
+      }}/>
+      <ScrollView style={{top: 60}}>
+    </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+function ForumPost4() {
+  const [text, setText] = useState(''); 
+  return (
+    <SafeAreaView style={styles.container}>
+            <View style={{
+        flexDirection: 'row',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: "space-between"
+      }}>
+        <Image 
+          source={images.icon}
+          style={{
+            left: 6,
+            top: -7
+          }}
+        />
+        <Text style={{fontSize: 30, color: '#FFFFFF', fontWeight: 'bold', top: -6, left: 12}}>Recovery Grow</Text>
+        <Image 
+          source={images.profileIcon}
+          style={{
+            top: -5,
+            left: 20
+          }}
+        />
+      </View>
+      <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center'
+      }}/>
+      <View style={{
+      backgroundColor: '#404040',
+      flexDirection: 'row',
+      width: '97%',
+      borderRadius: 7,
+      top: 15,
+      height: 190,
+      alignSelf: 'center'
+    }}>
+      <Image source={images.red}
+        style={{
+          left: 15,
+          // top: 10,
+          alignSelf: 'center'
+        }}
+      />
+      <View style={{
+        left: 30,
+        top: 10
+      }}>
+        <View style={{
+          flexDirection: 'row',
+          alignItems: 'flex-start'
+        }}>
+          <View style={{
+            backgroundColor: 'green',
+            borderRadius: 5,
+            width: 130
+            }}>
+            <Text style={{
+              color: 'white',
+              alignSelf: 'center',
+              fontSize: 16
+              }}>
+              Mental Health
+            </Text>
+          </View>
+          <Image 
+            source={images.smallSpeaker}
+            style={{
+              top: -6,
+              left: 4
+            }}
+          />
+        </View>
+        <View style={{
+          width: '90%'
+        }}>
+          <Text style={{
+            color: 'white',
+            fontSize: 20
+          }}>
+            Keeping energy levels up while recovering
+          </Text>
+          <View style={{
+            backgroundColor: '#313033',
+            top: 10,
+            borderRadius: 7
+          }}>
+            <Text style={{
+              color: 'white',
+              fontSize: 16,
+              marginLeft: 6,
+              marginTop: 2,
+              marginBottom: 2,
+              marginRight: 2
+            }}>
+              How do y'all maintain energy throughout the day? I've been a bit wary of caffiene lately but used to be a heavy coffee drinker before my concussion...
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center', 
+        top: 30
+      }}/>
+    <View style={{
+      backgroundColor: '#404040', 
+      top: 40
+    }}>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      alignItems: 'center',
+    }}>
+      <Image source={images.profileIcon} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                fontStyle:'italic', 
+                borderWidth: 12, 
+                height: 60, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+              }}
+              placeholder="Add a reply..."
+              placeholderTextColor='#E5E1E5'
+              onChangeText={newText => setText(newText)}
+              defaultValue={text}
+              multiline={true}
+      />
+    </View>
+    <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Reply</Text>
+    </Pressable>
+    </View>
+    {/* <Pressable style={styles.saveButton1}>
+        <Text style={styles.saveText}>Post</Text>
+    </Pressable> */}
+    <View style={{
+        borderColor: '#616161',
+        borderBottomWidth: 1,
+        width: '97%',
+        alignSelf: 'center',
+        top: 50
+      }}/>
+      <ScrollView style={{top: 60}}>
+      <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      alignItems: 'center',
+      height: 135
+    }}>
+      <Image source={images.orange} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 115, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="Try to get up and move! Obviously don’t do anything that could bonk your head but some light movement can get you motivated"
+              placeholderTextColor='#E5E1E5'
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 10,
+      alignItems: 'center',
+      height: 115
+    }}>
+      <Image source={images.blue} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 95, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="Be sure to eat well and hydrate. It’s a lot harder to get things done when your body doesn’t have any fuel"
+              placeholderTextColor='#E5E1E5'
+              multiline={true}
+              editable={false}
+      />
+    </View>
+    <View style={{
+      flexDirection: 'row',
+      width: '97%',
+      backgroundColor: '#404040',
+      alignSelf: 'center',
+      borderRadius: 7,
+      top: 20,
+      alignItems: 'center',
+      height: 115
+    }}>
+      <Image source={images.yellow} style={{
+        left: 15
+      }}/>
+      <TextInput
+              style={{
+                borderWidth: 12, 
+                height: 95, 
+                marginLeft: 15,
+                marginRight: 15, 
+                marginTop: 15, 
+                borderRadius: 15, 
+                borderColor: '#313033', 
+                backgroundColor: '#313033', 
+                color: '#FFFFFF', 
+                fontSize: 18,
+                width: '77%',
+                left: 15,
+                top: -7
+                
+              }}
+              placeholder="Do stuff that you enjoy :) I find it easier to do things when I can find happiness in doing them"
               placeholderTextColor='#E5E1E5'
               multiline={true}
               editable={false}
@@ -866,7 +1521,7 @@ function CommunityScreen() {
         </Pressable>
       </View>
     </View>
-    <Pressable onPress={() => navigation.navigate('ForumPost')}>
+    <Pressable onPress={() => navigation.navigate('ForumPost1')}>
     <View style={{
       backgroundColor: '#404040',
       flexDirection: 'row',
@@ -941,7 +1596,7 @@ function CommunityScreen() {
       </View>
     </View>
     </Pressable>
-    <Pressable onPress={() => navigation.navigate('ForumPost')}>
+    <Pressable onPress={() => navigation.navigate('ForumPost2')}>
     <View style={{
       backgroundColor: '#404040',
       flexDirection: 'row',
@@ -1016,7 +1671,7 @@ function CommunityScreen() {
       </View>
     </View>
     </Pressable>
-    <Pressable onPress={() => navigation.navigate('ForumPost')}>
+    <Pressable onPress={() => navigation.navigate('ForumPost3')}>
     <View style={{
       backgroundColor: '#404040',
       flexDirection: 'row',
@@ -1091,7 +1746,7 @@ function CommunityScreen() {
       </View>
     </View>
     </Pressable>
-    <Pressable onPress={() => navigation.navigate('ForumPost')}>
+    <Pressable onPress={() => navigation.navigate('ForumPost4')}>
     <View style={{
       backgroundColor: '#404040',
       flexDirection: 'row',
@@ -1179,6 +1834,9 @@ export default function CommunityTab(){
         <Stack.Screen options={{headerShown: false}} name="CommunityScreen" component={CommunityScreen}/>
         <Stack.Screen options={{headerShown: false}} name="ForumPost" component={ForumPost}/>
         <Stack.Screen options={{headerShown: false}} name="ForumPost1" component={ForumPost1}/>
+        <Stack.Screen options={{headerShown: false}} name="ForumPost2" component={ForumPost2}/>
+        <Stack.Screen options={{headerShown: false}} name="ForumPost3" component={ForumPost3}/>
+        <Stack.Screen options={{headerShown: false}} name="ForumPost4" component={ForumPost4}/>
     </Stack.Navigator>
     );
 
