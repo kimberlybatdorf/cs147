@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, Component} from 'react';
 import { StyleSheet, SafeAreaView, View, Text, TextInput, Image, FlatList, List, ImageBackgroundBase, Button, ScrollView } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -13,6 +13,13 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Update from './Update';
 import { supabase } from './Supabase';
 import { clickProps } from 'react-native-web/dist/cjs/modules/forwardedProps';
+
+//import Voice, {
+//  SpeechRecognizedEvent,
+//  SpeechResultsEvent,
+//  SpeechErrorEvent,
+//} from '@react-native-voice/voice';
+
 
 
 function UpdatesHomeScreen() {
@@ -40,6 +47,16 @@ function UpdatesHomeScreen() {
 
   function AllUpdatesGrid() {
     const navigation = useNavigation();
+
+    const getPosts = async () => {
+      try{
+      const { data, error } = await supabase.from('PostInformation').select('*').eq('PostInformation.created_at', '22-12-09');
+      console.log("supabase getPosts data 12/09", data);
+      console.log("Supabase err", error);
+      } catch(err){
+      console.error(err)
+    }
+  }
     return(
      
     <ScrollView style={styles.scrollView}>
@@ -47,7 +64,7 @@ function UpdatesHomeScreen() {
         <Col style={styles.gridCol}>
           <View style={{height: 242, marginTop: 35}}>
           <Row size={30} style={styles.gridRow}>
-            <Pressable onPress ={() => navigation.navigate('MoreInformationScreen1128')}>
+            <Pressable onPress ={() => { navigation.navigate('MoreInformationScreen1128'); getPosts();}}>
               <Text style={styles.gridText}>11/28</Text>
             </Pressable>
           </Row>
@@ -1064,15 +1081,30 @@ function UpdatesHomeScreen() {
     const [text, setText] = useState('');
     const navigation = useNavigation();
 
+    const [checked1, check1] = useState(false);
+    const [checked2, check2] = useState(false);
+    const [checked3, check3] = useState(false);
+    const [checked4, check4] = useState(false);
+    const [checked5, check5] = useState(false);
+    const [checked6, check6] = useState(false);
+    const [checked7, check7] = useState(false);
+    const [checked8, check8] = useState(false);
+    const [checked9, check9] = useState(false);
+    const [checked10, check10] = useState(false);
+
     const getPosts = async () => {
       try{
-      const { data, error } = await supabase.from('PostInformation').select('*');
-      console.log("supabase getPosts data 11/28", data);
+      const { data, error } = await supabase.from('PostInformation').select('*').eq('created_at', PostInformation.created_at);
+      console.log("supabase getPosts data 12/09", data);
       console.log("Supabase err", error);
       } catch(err){
       console.error(err)
     }
   }
+
+  React.useEffect(() => {
+    getPosts();
+  }, []);
 
     return (
       <SafeAreaView style={styles.container}>
